@@ -836,8 +836,6 @@ template {
 }
 
 .donateLink:hover {
-  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
   opacity: 1;
   -webkit-transition: all .5s;
   -o-transition: all .5s;
@@ -1373,18 +1371,10 @@ template {
   display: flex;
   height: 70vh;
   margin-bottom: 100px;
+  background: url("../img/bgPaw.png") 20px 30px;
 }
 
-.item-edges {
-  width: 28%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
-}
-
-.item-edges,
-.item-middle__card {
+.card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1396,12 +1386,88 @@ template {
       -ms-flex-pack: start;
           justify-content: flex-start;
   color: #fff;
-  padding: 15px  10px  10px  30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.card:hover .front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card:nth-child(even):hover .front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card:hover .back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.card-around {
+  width: 28%;
+  height: 100%;
+}
+
+.wrap-middle {
+  width: 44%;
+  height: 100%;
+}
+
+.card-middle {
+  height: 50%;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: ease-in-out 0.8s;
+  -o-transition: ease-in-out 0.8s;
+  transition: ease-in-out 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.num-number {
+.front {
+  background-image: cover;
+  padding: 15px  10px  10px  30px;
+  color: inherit;
+  overflow: hidden;
+}
+
+.back {
+  background: #ffde00;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  color: #232323;
+  padding: 0 2rem;
+}
+
+.number {
   font-size: 90px;
 }
 
@@ -1413,18 +1479,6 @@ template {
   max-width: 60%;
   line-height: 50px;
   margin: 0;
-}
-
-.item-middle {
-  width: 44%;
-  height: 100%;
-}
-
-.item-middle__card {
-  height: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .about {
@@ -2657,7 +2711,7 @@ body {
     font-size: 27px;
   }
 
-  .num-number {
+  .number {
     font-size: 70px;
   }
 
@@ -2879,19 +2933,37 @@ body {
     height: 100%;
   }
 
-  .item-edges {
-    width: 90%;
-    background-position: center;
+  .card:hover .front {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
   }
 
-  .item-edges,
-  .item-middle__card {
+  .card:nth-child(even):hover .front {
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+  }
+
+  .card:hover .back {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+
+  .card {
     height: 45vh;
   }
 
-  .item-middle,
-  .item-edges {
+  .card-around {
+    background-position: center;
     width: 90%;
+  }
+
+  .wrap-middle {
+    width: 90%;
+  }
+
+  .back {
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
   }
 
   .about__title {
@@ -3255,12 +3327,11 @@ body {
 }
 
 @media screen and (max-width: 550px) {
-  .item-edges,
-  .item-middle__card {
+  .card {
     height: 35vh;
   }
 
-  .num-number {
+  .number {
     font-size: 40px;
   }
 
@@ -3352,12 +3423,11 @@ body {
     max-height: 80%;
   }
 
-  .item-edges {
+  .card-around {
     width: 100%;
   }
 
-  .item-middle,
-  .item-edges {
+  .wrap-middle {
     width: 100%;
   }
 }
@@ -3445,6 +3515,8 @@ body {
 .webp .adopt__btn:hover{ background: #ffde00 url(../img/bgPaw.webp) 20px 18px; }
 
 .webp .adopt .btn:hover{ background: #ffde00 url(../img/bgPaw.webp) 20px 18px; }
+
+.webp .num__cards{ background: url(../img/bgPaw.webp) 20px 30px; }
 
 .webp .about__btn:hover{ background: #ffde00 url(../img/bgPaw.webp) 20px 18px; }
 
