@@ -15,7 +15,6 @@
     }
 	&__title {
         @include title(center);
-        // margin-top: 150px;
 	}
 	&__subtitle {
         font-size: 20px;
@@ -111,7 +110,6 @@
         line-height: 22px;
         overflow: hidden; 
         transition: max-height 0.8s;
-        // transition: all 0.5s ease 0s;
             &.short{
                 max-height: 100%;
                 overflow:overlay;

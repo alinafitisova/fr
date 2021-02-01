@@ -94,16 +94,61 @@
     background-image: cover;
     padding: 15px  10px  10px  30px;
     color: inherit;
-    overflow: hidden;
 }
 .back {
     background: #ffde00;
     transform: rotateY(-180deg);
     color: $primaryCol;
-    padding: 0 2rem;
+    padding: 10px  15px  10px  15px;
         @media screen and (max-width: 768px) {
             transform: rotateX(-180deg); 
         }
+    &__subtitle {
+        @include subtitle(center);
+        margin: 0;
+        box-sizing: border-box;
+    }
+    &__description {
+        width: 100%;
+        margin-top: 20px;
+        @include description(left);
+        max-height: 320px;
+        transition: max-height 0.8s;
+        overflow: hidden;
+        &.short{
+            max-height: 100%;
+            overflow: overlay;
+        }
+        & a {
+            font-weight: 500;
+            text-decoration: none;
+            color:inherit;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+            font-size: 17px;
+            line-height: 25px;
+            @media screen and (max-width: 1024px) {
+                font-size: 15px;
+            }
+            @media screen and (max-width: 880px) {
+                font-size: 14px;
+                line-height: 21px;
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 15px;
+                line-height: 28px;
+            }
+            @media screen and (max-width: 600px) {
+                font-size: 14px;
+                line-height: 25px;
+            }
+            @media screen and (max-width: 425px) {
+                font-size: 12px;
+                line-height: 16px;
+            }
+    }
 }
 .number {
     font-size: 90px;
@@ -129,4 +174,13 @@
     @media screen and (max-width: 550px)  {
         font-size: 17px;
     }
+}
+.readMore {
+    font-size: 12px;
+    cursor: pointer;
+    text-align: right;
+        &:hover {
+            font-size: 13px;
+            transition:  0.8s;
+        }
 }

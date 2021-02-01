@@ -74,7 +74,7 @@ const docWidth = document.documentElement.offsetWidth;
     // jQuery readMore function
     
     $('.readMore').click(function(event) {
-        $('.adopt__text').toggleClass('short');
+        $('.adopt__text, .back__description').toggleClass('short');
     });
      // To up window button
     $(window).on('scroll', function () {
