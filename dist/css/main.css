@@ -1873,7 +1873,7 @@ template {
 
 .aboutUs__heading {
   font-size: 40px;
-  line-height: 37px;
+  line-height: 60px;
   text-align: center;
   font-family: "Roboto-Regular";
   font-weight: 400;
@@ -2022,7 +2022,7 @@ template {
 
 .help__heading {
   font-size: 40px;
-  line-height: 37px;
+  line-height: 60px;
   text-align: center;
   font-family: "Roboto-Regular";
   font-weight: 400;
@@ -2041,6 +2041,7 @@ template {
 .help__photo-shelter {
   height: 50vh;
   width: 100%;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2251,6 +2252,10 @@ tbody tr:nth-child(even) {
   line-height: 20px;
 }
 
+.how-toHelp {
+  width: 100%;
+}
+
 .how-toHelp__title {
   font-size: 35px;
   text-align: center;
@@ -2442,7 +2447,7 @@ tbody tr:nth-child(even) {
 
 .contacts__heading {
   font-size: 40px;
-  line-height: 37px;
+  line-height: 60px;
   text-align: center;
   font-family: "Roboto-Regular";
   font-weight: 400;
@@ -3535,6 +3540,10 @@ body {
     font-size: 12px;
     line-height: 16px;
   }
+
+  .help__photo-shelter {
+    height: 40vh;
+  }
 }
 
 @media screen and (max-width: 424px) {
@@ -3563,6 +3572,11 @@ body {
   .aboutUs__blockquote cite {
     font-size: 13px;
     line-height: 15px;
+  }
+
+  .help__photo-shelter {
+    background-size: cover;
+    background-position: right bottom;
   }
 
   .help__blockquote {
