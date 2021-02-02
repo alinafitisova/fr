@@ -45,18 +45,22 @@ $mainFont: "Roboto-Regular";
 }
 @mixin title ($textAl) {
     font-size: 35px;
+    line-height: 45px;
     text-align: $textAl;
     font-family: $mainFont;
     font-weight: 400;
     color: $primaryCol;
     @media screen and (max-width: 1024px) {
         font-size: 30px;
+        line-height: 40px;
     }
     @media screen and (max-width: 880px) {
         font-size: 27px;
+        line-height: 37px;
     }
     @media screen and (max-width: 768px) {
         font-size: 25px;
+        line-height: 35px;
     }
 }
 @mixin subtitle ($textAl) {

@@ -792,6 +792,7 @@ template {
 
 .header-heading__title {
   font-size: 35px;
+  line-height: 45px;
   text-align: left;
   font-family: "Roboto-Regular";
   font-weight: 400;
@@ -1002,6 +1003,7 @@ template {
 
 .lost-slider__title {
   font-size: 35px;
+  line-height: 45px;
   text-align: left;
   font-family: "Roboto-Regular";
   font-weight: 400;
@@ -1131,6 +1133,7 @@ template {
 
 .adopt__title {
   font-size: 35px;
+  line-height: 45px;
   text-align: center;
   font-family: "Roboto-Regular";
   font-weight: 400;
@@ -1358,6 +1361,7 @@ template {
 
 .num__title {
   font-size: 35px;
+  line-height: 45px;
   text-align: center;
   font-family: "Roboto-Regular";
   font-weight: 400;
@@ -1542,7 +1546,7 @@ template {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  margin-top: -12px;
+  margin: -12px 0 70px;
   padding-top: 25px;
 }
 
@@ -1561,7 +1565,7 @@ template {
 }
 
 .about__pic,
-.about__description {
+.about__left {
   width: 50%;
   height: 100%;
 }
@@ -1572,14 +1576,14 @@ template {
   background-size: cover;
 }
 
-.about__description {
+.about__left {
   background: #fff;
   padding: 10px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.about__heading {
+.about__description {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1591,23 +1595,24 @@ template {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .about__title {
   font-size: 35px;
+  line-height: 45px;
   text-align: left;
   font-family: "Roboto-Regular";
   font-weight: 400;
   color: #232323;
+  margin: 0px  0px;
 }
 
 .about__text {
   width: 100%;
-  line-height: 25px;
   min-height: 40%;
+  line-height: 40px;
 }
 
 .about__btn {
@@ -1617,7 +1622,6 @@ template {
   background: transparent;
   border: 4px #2ea260 solid;
   border-bottom: none;
-  padding: 10px 10px;
   text-decoration: none;
   color: #2ea260;
   display: inline-block;
@@ -1631,6 +1635,8 @@ template {
   -webkit-box-shadow: 0px 3px 0px #247e4b;
           box-shadow: 0px 3px 0px #247e4b;
   text-align: center;
+  padding: 10px 10px;
+  margin-bottom: 20px;
 }
 
 .about__btn:hover {
@@ -1684,7 +1690,6 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 70px;
   padding: 0  20px;
 }
 
@@ -1740,10 +1745,13 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer-menu__item {
-  margin-right: 30px;
+  max-width: 20%;
+  margin: 0 10px 20px 0;
 }
 
 .footer-menu__category,
@@ -1764,12 +1772,18 @@ template {
   font-family: Roboto-Medium;
   font-weight: 500;
   font-size: 18px;
+  line-height: 23px;
   color: #2ea260;
 }
 
 .footer-menu__subcategory {
   text-decoration: none;
   color: #232323;
+  line-height: 20px;
+}
+
+.socials__inner {
+  margin: 0px  0px 25px 0;
 }
 
 .scroll {
@@ -1947,6 +1961,7 @@ template {
 
 .historyAboutUs__title {
   font-size: 35px;
+  line-height: 45px;
   text-align: center;
   font-family: "Roboto-Regular";
   font-weight: 400;
@@ -1969,6 +1984,7 @@ template {
 
 .location-shelter__title {
   font-size: 35px;
+  line-height: 45px;
   text-align: center;
   font-family: "Roboto-Regular";
   font-weight: 400;
@@ -1987,6 +2003,7 @@ template {
 
 .achievement__title {
   font-size: 35px;
+  line-height: 45px;
   text-align: center;
   font-family: "Roboto-Regular";
   font-weight: 400;
@@ -2045,6 +2062,9 @@ template {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
 }
 
 .help__blockquote {
@@ -2091,6 +2111,7 @@ template {
 
 .finance-help__title {
   font-size: 35px;
+  line-height: 45px;
   text-align: center;
   font-family: "Roboto-Regular";
   font-weight: 400;
@@ -2154,27 +2175,33 @@ template {
   font-weight: 700;
 }
 
-.box {
+.box,
+.clinics {
   width: 100%;
 }
 
-.box__table {
+.box__table,
+.clinics__table {
   table-layout: fixed;
   width: 100%;
-  line-height: 25px;
+  line-height: 30px;
   border-collapse: collapse;
   border: 1px #ccc solid;
   -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.box__table td {
+.box__table td,
+.clinics__table td {
+  width: 20%;
   border: 1px #ccc solid;
   padding: 6px;
-  letter-spacing: 1px;
 }
 
-.box__area {
+.box__area,
+.clinics__area {
   width: 100%;
   border: none;
   outline: none;
@@ -2191,11 +2218,13 @@ template {
   margin-bottom: 10px;
 }
 
-.box__area::-webkit-details-marker {
+.box__area::-webkit-details-marker,
+.clinics__area::-webkit-details-marker {
   display: none;
 }
 
-.box__area::after {
+.box__area::after,
+.clinics__area::after {
   position: absolute;
   display: block;
   content: '+';
@@ -2258,6 +2287,7 @@ tbody tr:nth-child(even) {
 
 .how-toHelp__title {
   font-size: 35px;
+  line-height: 45px;
   text-align: center;
   font-family: "Roboto-Regular";
   font-weight: 400;
@@ -2279,6 +2309,7 @@ tbody tr:nth-child(even) {
 
 .curator__title {
   font-size: 35px;
+  line-height: 45px;
   text-align: center;
   font-family: "Roboto-Regular";
   font-weight: 400;
@@ -2332,6 +2363,7 @@ tbody tr:nth-child(even) {
 
 .cruel__title {
   font-size: 35px;
+  line-height: 45px;
   text-align: center;
   font-family: "Roboto-Regular";
   font-weight: 400;
@@ -2414,6 +2446,107 @@ tbody tr:nth-child(even) {
   color: #232323;
 }
 
+.vet-wrapper {
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.vet {
+  height: 100%;
+  width: 100%;
+}
+
+.vet__title {
+  font-size: 35px;
+  line-height: 45px;
+  text-align: center;
+  font-family: "Roboto-Regular";
+  font-weight: 400;
+  color: #232323;
+}
+
+.vet__bgImg {
+  height: 50vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  margin-bottom: 50px;
+}
+
+.vet .container {
+  height: 100vh;
+}
+
+.emergency {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.emergency__img {
+  height: 80%;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.emergency__description {
+  font-size: 18px;
+  line-height: 37px;
+  text-align: left;
+  font-family: "Roboto-Regular";
+  font-weight: 400;
+  color: #232323;
+  list-style: none;
+  padding: 0;
+  margin: 0 15px 0 0;
+  height: 100%;
+}
+
+.emergency__img,
+.emergency__description {
+  width: 50%;
+}
+
+.emergency__item::before {
+  content: "\1F43E";
+  color: #ffde00;
+  font-weight: bold;
+  font-size: 25px;
+  display: inline-block;
+  width: 35px;
+}
+
+.veterinary {
+  width: 100%;
+}
+
 .contacts-wrapper {
   margin-top: 150px;
   display: -webkit-box;
@@ -2431,9 +2564,9 @@ tbody tr:nth-child(even) {
           justify-content: center;
 }
 
-.contacts .container img {
+.contacts__pets {
   max-width: 100%;
-  margin-bottom: -5.4%;
+  margin-bottom: -5.2%;
 }
 
 .contacts a {
@@ -2452,6 +2585,7 @@ tbody tr:nth-child(even) {
   font-family: "Roboto-Regular";
   font-weight: 400;
   color: #232323;
+  margin: 0;
 }
 
 .contacts__bg {
@@ -2465,6 +2599,7 @@ tbody tr:nth-child(even) {
 
 .contacts__title {
   font-size: 35px;
+  line-height: 45px;
   text-align: left;
   font-family: "Roboto-Regular";
   font-weight: 400;
@@ -2518,6 +2653,11 @@ tbody tr:nth-child(even) {
   width: 50vh;
 }
 
+.contacts__volunteers {
+  max-width: 100%;
+  margin-top: -28px;
+}
+
 html,
 body {
   font-family: "Roboto-Regular";
@@ -2529,6 +2669,8 @@ body {
   max-width: 1180px;
   margin: auto;
   padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (max-width: 1200px) {
@@ -2582,14 +2724,17 @@ body {
 
   .header-heading__title {
     font-size: 30px;
+    line-height: 40px;
   }
 
   .lost-slider__title {
     font-size: 30px;
+    line-height: 40px;
   }
 
   .adopt__title {
     font-size: 30px;
+    line-height: 40px;
   }
 
   .adopt__subtitle {
@@ -2598,6 +2743,7 @@ body {
 
   .num__title {
     font-size: 30px;
+    line-height: 40px;
   }
 
   .back__subtitle {
@@ -2614,6 +2760,7 @@ body {
 
   .about__title {
     font-size: 30px;
+    line-height: 40px;
   }
 
   .aboutUs__heading {
@@ -2626,6 +2773,7 @@ body {
 
   .historyAboutUs__title {
     font-size: 30px;
+    line-height: 40px;
   }
 
   .historyAboutUs__description {
@@ -2634,6 +2782,7 @@ body {
 
   .location-shelter__title {
     font-size: 30px;
+    line-height: 40px;
   }
 
   .location-shelter__description {
@@ -2642,6 +2791,7 @@ body {
 
   .achievement__title {
     font-size: 30px;
+    line-height: 40px;
   }
 
   .achievement__description {
@@ -2658,6 +2808,7 @@ body {
 
   .finance-help__title {
     font-size: 30px;
+    line-height: 40px;
   }
 
   .finance-help__subtitle {
@@ -2670,6 +2821,7 @@ body {
 
   .how-toHelp__title {
     font-size: 30px;
+    line-height: 40px;
   }
 
   .how-toHelp__subtitle {
@@ -2678,6 +2830,7 @@ body {
 
   .curator__title {
     font-size: 30px;
+    line-height: 40px;
   }
 
   .curator__subtitle {
@@ -2691,6 +2844,7 @@ body {
 
   .cruel__title {
     font-size: 30px;
+    line-height: 40px;
   }
 
   .cruel__subtitle {
@@ -2705,12 +2859,22 @@ body {
     font-size: 17px;
   }
 
+  .vet__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .emergency__description {
+    font-size: 17px;
+  }
+
   .contacts__heading {
     font-size: 35px;
   }
 
   .contacts__title {
     font-size: 30px;
+    line-height: 40px;
   }
 
   .contacts__title {
@@ -2759,21 +2923,24 @@ body {
 
   .about__text {
     font-size: 14px;
-    line-height: 19px;
+    line-height: 31px;
   }
 }
 
 @media screen and (max-width: 880px) {
   .header-heading__title {
     font-size: 27px;
+    line-height: 37px;
   }
 
   .lost-slider__title {
     font-size: 27px;
+    line-height: 37px;
   }
 
   .adopt__title {
     font-size: 27px;
+    line-height: 37px;
   }
 
   .adopt__subtitle {
@@ -2782,6 +2949,7 @@ body {
 
   .num__title {
     font-size: 27px;
+    line-height: 37px;
   }
 
   .back__subtitle {
@@ -2809,6 +2977,7 @@ body {
 
   .about__title {
     font-size: 27px;
+    line-height: 37px;
   }
 
   .aboutUs__heading {
@@ -2822,6 +2991,7 @@ body {
 
   .historyAboutUs__title {
     font-size: 27px;
+    line-height: 37px;
   }
 
   .historyAboutUs__description {
@@ -2831,6 +3001,7 @@ body {
 
   .location-shelter__title {
     font-size: 27px;
+    line-height: 37px;
   }
 
   .location-shelter__description {
@@ -2840,6 +3011,7 @@ body {
 
   .achievement__title {
     font-size: 27px;
+    line-height: 37px;
   }
 
   .achievement__description {
@@ -2858,6 +3030,7 @@ body {
 
   .finance-help__title {
     font-size: 27px;
+    line-height: 37px;
   }
 
   .finance-help__subtitle {
@@ -2871,6 +3044,7 @@ body {
 
   .how-toHelp__title {
     font-size: 27px;
+    line-height: 37px;
   }
 
   .how-toHelp__subtitle {
@@ -2879,6 +3053,7 @@ body {
 
   .curator__title {
     font-size: 27px;
+    line-height: 37px;
   }
 
   .curator__subtitle {
@@ -2893,6 +3068,7 @@ body {
 
   .cruel__title {
     font-size: 27px;
+    line-height: 37px;
   }
 
   .cruel__subtitle {
@@ -2909,12 +3085,23 @@ body {
     line-height: 25px;
   }
 
+  .vet__title {
+    font-size: 27px;
+    line-height: 37px;
+  }
+
+  .emergency__description {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
   .contacts__heading {
     font-size: 30px;
   }
 
   .contacts__title {
     font-size: 27px;
+    line-height: 37px;
   }
 
   .contacts__title {
@@ -2962,6 +3149,7 @@ body {
 
   .header-heading__title {
     font-size: 25px;
+    line-height: 35px;
   }
 
   .donatModal__title {
@@ -2986,6 +3174,7 @@ body {
 
   .lost-slider__title {
     font-size: 25px;
+    line-height: 35px;
   }
 
   .lost-slider__text {
@@ -2999,6 +3188,7 @@ body {
 
   .adopt__title {
     font-size: 25px;
+    line-height: 35px;
   }
 
   .adopt__subtitle {
@@ -3007,6 +3197,7 @@ body {
 
   .num__title {
     font-size: 25px;
+    line-height: 35px;
   }
 
   .num__cards {
@@ -3068,11 +3259,13 @@ body {
 
   .about__title {
     font-size: 25px;
+    line-height: 35px;
   }
 
   .about__text {
     max-height: 40%;
     overflow: scroll;
+    line-height: 23px;
   }
 
   .aboutUs__heading {
@@ -3085,6 +3278,7 @@ body {
 
   .historyAboutUs__title {
     font-size: 25px;
+    line-height: 35px;
   }
 
   .historyAboutUs__description {
@@ -3093,6 +3287,7 @@ body {
 
   .location-shelter__title {
     font-size: 25px;
+    line-height: 35px;
   }
 
   .location-shelter__description {
@@ -3101,6 +3296,7 @@ body {
 
   .achievement__title {
     font-size: 25px;
+    line-height: 35px;
   }
 
   .achievement__description {
@@ -3117,6 +3313,7 @@ body {
 
   .finance-help__title {
     font-size: 25px;
+    line-height: 35px;
   }
 
   .finance-help__subtitle {
@@ -3140,9 +3337,10 @@ body {
     width: 100%;
   }
 
-  .box__table {
-    font-size: 13px;
-    line-height: 20px;
+  .box__table,
+  .clinics__table {
+    font-size: 14px;
+    line-height: 25px;
   }
 
   .kindOF-help__item {
@@ -3151,6 +3349,7 @@ body {
 
   .how-toHelp__title {
     font-size: 25px;
+    line-height: 35px;
   }
 
   .how-toHelp__subtitle {
@@ -3159,6 +3358,7 @@ body {
 
   .curator__title {
     font-size: 25px;
+    line-height: 35px;
   }
 
   .curator__subtitle {
@@ -3188,6 +3388,7 @@ body {
 
   .cruel__title {
     font-size: 25px;
+    line-height: 35px;
   }
 
   .cruel__subtitle {
@@ -3230,12 +3431,22 @@ body {
     font-size: 13px;
   }
 
+  .vet__title {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .emergency__description {
+    font-size: 13px;
+  }
+
   .contacts__heading {
     font-size: 27px;
   }
 
   .contacts__title {
     font-size: 25px;
+    line-height: 35px;
   }
 
   .contacts__title {
@@ -3312,17 +3523,13 @@ body {
   }
 
   .about__pic,
-  .about__description {
+  .about__left {
     width: 100%;
-    height: 48%;
+    height: 50%;
   }
 
   .footer__body {
     margin-top: 170px;
-  }
-
-  .footer-menu {
-    display: none;
   }
 }
 
@@ -3446,8 +3653,8 @@ body {
 }
 
 @media screen and (max-width: 460px) {
-  .contacts .container img {
-    margin-bottom: -6%;
+  .contacts__pets {
+    margin-bottom: -6.2%;
   }
 }
 
@@ -3541,7 +3748,21 @@ body {
     line-height: 16px;
   }
 
+  .footer-menu__item {
+    max-width: 30%;
+  }
+
   .help__photo-shelter {
+    height: 40vh;
+  }
+
+  .box__table,
+  .clinics__table {
+    font-size: 12px;
+    line-height: 23px;
+  }
+
+  .vet__bgImg {
     height: 40vh;
   }
 }
@@ -3596,6 +3817,11 @@ body {
     line-height: 15px;
   }
 
+  .vet__bgImg {
+    background-size: cover;
+    background-position: right bottom;
+  }
+
   .contacts__bg {
     padding: 15px;
   }
@@ -3641,4 +3867,4 @@ body {
 
 .webp .about .btn:hover{ background: #ffde00 url(../img/bgPaw.webp) 20px 18px; }
 
-.webp .box__area{ background: #ffdd003f url(../img/bgPaw.webp) 23px 23px; }
+.webp .box__area, .webp .clinics__area{ background: #ffdd003f url(../img/bgPaw.webp) 23px 23px; }

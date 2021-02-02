@@ -2,7 +2,6 @@
     &__body {
         display: flex;
         flex-direction: column;
-        margin-top: 70px;
         padding: 0  20px;
         @media screen and (max-width: 660px) {
             margin-top: 170px;
@@ -36,10 +35,6 @@
         display: flex;
         justify-content: space-between;
     }
-
-    &__bottom {
-    }
-
     &__copyright {
         color: #a6a6a6;
         font-size: 14px;
@@ -49,11 +44,16 @@
     display: flex;
     align-items: start;
     justify-content: space-between;
+    flex-wrap: wrap;
     @media screen and (max-width: 660px) {
-        display: none;
+        
     }
     &__item {
-        margin-right: 30px;
+        max-width: 20%;
+        margin: 0 10px 20px 0;
+        @media screen and (max-width: 425px) {
+            max-width: 30%;
+        }
     }
     &__category,
     &__subcategory {
@@ -68,12 +68,17 @@
         font-family: Roboto-Medium;
         font-weight: 500;
         font-size: 18px;
+        line-height: 23px;
         color: $secondaryCol;
     }
     &__subcategory {
         text-decoration: none;
         color: $primaryCol;
+        line-height: 20px;
     }
+}
+.socials__inner {
+    margin: 0px  0px 25px 0;
 }
 // ------------------ Up Button -------------------
 .scroll {
