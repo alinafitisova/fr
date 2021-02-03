@@ -679,24 +679,24 @@ template {
   margin-right: 10px;
 }
 
-.socials__icon use:hover,
-.socials__icon use:focus {
+.socials__icon:hover use,
+.socials__icon:focus use {
   fill: #455892;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
 
-.socials__icon--inst use:hover,
-.socials__icon--inst use:focus {
+.socials__icon--inst:hover use,
+.socials__icon--inst:focus use {
   fill: url(#brand-gradient);
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
 
-.socials__icon--ok use:hover,
-.socials__icon--ok use:focus {
+.socials__icon--ok:hover use,
+.socials__icon--ok:focus use {
   fill: #F58220;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
@@ -1457,7 +1457,6 @@ template {
 }
 
 .front {
-  background-image: cover;
   padding: 15px  10px  10px  30px;
   color: inherit;
 }
@@ -1501,7 +1500,7 @@ template {
 
 .back__description.short {
   max-height: 100%;
-  overflow: overlay;
+  overflow: scroll;
 }
 
 .back__description a {
@@ -1546,7 +1545,7 @@ template {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  margin: -12px 0 70px;
+  margin: -12px 0 100px;
   padding-top: 25px;
 }
 
@@ -1561,7 +1560,6 @@ template {
           align-items: center;
   -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
-  margin-bottom: 40px;
 }
 
 .about__pic,
@@ -1625,8 +1623,6 @@ template {
   text-decoration: none;
   color: #2ea260;
   display: inline-block;
-  -ms-flex-item-align: left;
-      align-self: left;
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
@@ -2462,6 +2458,7 @@ tbody tr:nth-child(even) {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  height: 100%;
 }
 
 .vet {
@@ -2479,7 +2476,7 @@ tbody tr:nth-child(even) {
 }
 
 .vet__bgImg {
-  height: 50vh;
+  height: 55vh;
   width: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -2491,50 +2488,41 @@ tbody tr:nth-child(even) {
   margin-bottom: 50px;
 }
 
-.vet .container {
-  height: 100vh;
+.memor__title {
+  font-size: 35px;
+  line-height: 45px;
+  text-align: center;
+  font-family: "Roboto-Regular";
+  font-weight: 400;
+  color: #232323;
 }
 
-.emergency {
+.memor__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100%;
 }
 
-.emergency__img {
-  height: 80%;
-  max-width: 100%;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
-}
-
-.emergency__description {
+.memor__list {
   font-size: 18px;
   line-height: 37px;
   text-align: left;
   font-family: "Roboto-Regular";
   font-weight: 400;
   color: #232323;
-  list-style: none;
-  padding: 0;
-  margin: 0 15px 0 0;
-  height: 100%;
-}
-
-.emergency__img,
-.emergency__description {
   width: 50%;
+  list-style: none;
+  margin-left: 20px;
+  padding-left: 0;
 }
 
-.emergency__item::before {
+.memor__item::before {
   content: "\1F43E";
   color: #ffde00;
   font-weight: bold;
@@ -2543,8 +2531,21 @@ tbody tr:nth-child(even) {
   width: 35px;
 }
 
-.veterinary {
+.memor__subtitle {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Roboto-Regular";
+  font-weight: 700;
+  color: #232323;
+}
+
+.memor__left {
+  max-width: 100%;
   width: 100%;
+}
+
+.memor picture {
+  width: 50%;
 }
 
 .contacts-wrapper {
@@ -2864,8 +2865,17 @@ body {
     line-height: 40px;
   }
 
-  .emergency__description {
+  .memor__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .memor__list {
     font-size: 17px;
+  }
+
+  .memor__subtitle {
+    font-size: 18px;
   }
 
   .contacts__heading {
@@ -3090,9 +3100,18 @@ body {
     line-height: 37px;
   }
 
-  .emergency__description {
+  .memor__title {
+    font-size: 27px;
+    line-height: 37px;
+  }
+
+  .memor__list {
     font-size: 15px;
     line-height: 25px;
+  }
+
+  .memor__subtitle {
+    font-size: 16px;
   }
 
   .contacts__heading {
@@ -3227,12 +3246,13 @@ body {
   }
 
   .card {
-    height: 45vh;
+    height: 50vh;
   }
 
   .card-around {
     background-position: center;
     width: 90%;
+    margin: 15px 0;
   }
 
   .wrap-middle {
@@ -3266,6 +3286,10 @@ body {
     max-height: 40%;
     overflow: scroll;
     line-height: 23px;
+  }
+
+  .footer-menu__subcategory {
+    font-size: 14px;
   }
 
   .aboutUs__heading {
@@ -3436,8 +3460,28 @@ body {
     line-height: 35px;
   }
 
-  .emergency__description {
+  .memor__title {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .memor__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .memor__list {
     font-size: 13px;
+  }
+
+  .memor__subtitle {
+    font-size: 14px;
+  }
+
+  .memor picture {
+    width: 100%;
   }
 
   .contacts__heading {
@@ -3514,6 +3558,10 @@ body {
     height: 48%;
   }
 
+  .about {
+    margin-bottom: 170px;
+  }
+
   .about__inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3526,10 +3574,6 @@ body {
   .about__left {
     width: 100%;
     height: 50%;
-  }
-
-  .footer__body {
-    margin-top: 170px;
   }
 }
 
@@ -3752,6 +3796,14 @@ body {
     max-width: 30%;
   }
 
+  .footer-menu__category {
+    font-size: 17px;
+  }
+
+  .footer-menu__subcategory {
+    font-size: 13px;
+  }
+
   .help__photo-shelter {
     height: 40vh;
   }
@@ -3776,6 +3828,14 @@ body {
 @media screen and (max-width: 375px) {
   .donatModal__btn {
     font-size: 13px;
+  }
+
+  .footer-menu__item {
+    margin: 0 22px 20px 0;
+  }
+
+  .footer-menu__subcategory {
+    font-size: 12px;
   }
 
   .aboutUs__blockquote {

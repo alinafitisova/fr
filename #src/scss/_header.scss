@@ -225,18 +225,18 @@
         text-decoration: none;
         transition: all 0.5s ease 0s;
         margin-right: 10px;
-        & use:hover,
-        & use:focus {
+        &:hover use,
+        &:focus use {
             fill: #455892;
             transition: all 0.5s ease 0s;
             }
-        &--inst use:hover,
-        &--inst use:focus {
+        &--inst:hover use,
+        &--inst:focus use {
             fill: url(#brand-gradient);
             transition: all 0.5s ease 0s;
             }
-        &--ok use:hover,
-        &--ok use:focus {
+        &--ok:hover use,
+        &--ok:focus use {
             fill:#F58220;
             transition: all 0.5s ease 0s;
             }

@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Ветеринарные клиники Краматорска</title>
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/main.min.css">
@@ -13,6 +13,7 @@
             <div class="header__body">
                 <a href="index.html" class="header__logo logo">
                     <img src="img/logo.png" alt="Благотворительный фонд Друг">
+                </a>
                 <!-- /.header__logo -->
                 <div class="header__contacts">
                     <a class="header__mail" href="mailto:fond.drug08@mail.ru">
@@ -94,11 +95,11 @@
                                 <svg width="25px" height="25px">
                                     <use xlink:href="#inst" fill="#fff"></use>
                                     <defs>
-                                        <linearGradient id="brand-gradient">
+                                        <lineargradient id="brand-gradient">
                                             <stop offset="0%" stop-color="#F8ED34" />
                                             <stop offset="50%" stop-color="#EA118D" />
                                             <stop offset="100%" stop-color="#2E368F" />
-                                        </linearGradient>
+                                        </lineargradient>
                                     </defs>
                                 </svg>
                             </a>
@@ -108,8 +109,8 @@
                                 </svg>
                             </a>
                             <a class="socials__icon" href="https://vk.com/protectionanimals" target="_blank" rel="noopener noreferrer">
-                                <svg width="25px" height="25px"0px">
-                                    <use xlink:href="#vk" fill="#fff">
+                                <svg width="25px" height="25px">
+                                    <use xlink:href="#vk" fill="#fff"></use>
                                 </svg>
                             </a>
                         </div>
@@ -174,7 +175,7 @@
     <main class="vet-main">
         @@include('_donat.html')
         <div class="vet-wrapper">
-            <section class="veterinary">
+            <section class="vet" id="vetKram">
                 <div class="container">
                     <h2 class="vet__title">
                         Ветеринарные клиники Краматорска:
@@ -319,54 +320,52 @@
                 <!-- /.container -->
             </section>
             <!-- /.veterinary -->
-            <section class="vet">
+            <section class="memor">
                 <div class="container">
-                    <h2 class="vet__title">
+                    <h2 class="memor__title" id="memo">
                         Памятка для владельцев питомцев
                     </h2>
-                    <div class="emergency">
-                        <ul class="emergency__description">
-                            <li class="emergency__item">
+                    <div class="memor__box">
+                        <img  class="memor__left" src="img/vetEmergency.jpg" alt="vet">
+                        <!-- /.memor__left -->
+                        <ul class="memor__list">
+                            <li class="memor__item">
                                 Вакцинация: щенки с 8 недель каждые 3 недели до 12-16 недель, затем ревакцинация 1 раз в год.
                             </li>
-                            <li class="emergency__item">
+                            <li class="memor__item">
                                 Дегельминтизация: в возрасте 3-х, 5-х недель, далее ежемесячно до 6 месяцев, затем 1 раз в 3-6 месяцев на протяжении всей жизни.
                             </li>
-                            <li class="emergency__item">
+                            <li class="memor__item">
                                 Обработка от эктопаразитов: каждый месяц.
                             </li>
-                            <li class="emergency__item">
+                            <li class="memor__item">
                                 Удаление молочных зубов у мелких пород собакв 8-9 месяцев.
                             </li>
-                            <li class="emergency__item">
+                            <li class="memor__item">
                                 Кастрация/стерилизация с 6-7 месяцев.
                             </li>
-                            <li class="emergency__item">
+                            <li class="memor__item">
                                 Консультация стоматолога, снятие зубных отложений 1 раз в год.
                             </li>
-                            <li class="emergency__item">
+                            <li class="memor__item">
                                 Анализ крови и мочи 1 раз в год с 5 лет, 2 раза в год с 8 лет.
                             </li>
-                            <li class="emergency__item">
+                            <li class="memor__item">
                                 УЗИ 1 раз в год с 8 лет обязательно.
                             </li>
-                            <li class="emergency__item">
+                            <li class="memor__item">
                                 Осмотрт кардиолога 2 раза в год с 8 лет.
                             </li>
-                            <li class="emergency__item">
+                            <li class="memor__item">
                                 Контроль веса
                             </li>
-                            <h3 class="emergency__title">
+                            <h3 class="memor__subtitle">
                                 Круглосуточный вызов ветврача <a href="tel:+380505933614">(050)593-36-14</a>
                             </h3>
                         </ul>
-                        <!-- /.emergency__description -->
-                        <div class="emergency__img" 
-                        style="background-image: url('img/vetEmergency.jpg')">
-                        </div>
-                        <!-- /.emergency__img -->
+                        <!-- /.memor__list -->
                     </div>
-                    <!-- /.emergency -->
+                    <!-- /.memor__box -->
                 </div>
                 <!-- /.container -->
             </section>
