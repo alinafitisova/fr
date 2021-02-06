@@ -46,7 +46,7 @@
         }
     }
     &__description {
-        background: $cardCol;
+        background: $cardBGcol;
         padding: 15px 35px;
         box-sizing: border-box;
     }
@@ -79,7 +79,7 @@
 
 }
 .btn {
-    @include btn($secondaryCol, #fff, 20px , 20px ,$primaryCol);
+    @include btn($primaryBGcol, #fff, 20px , 20px ,$primaryCol);
 }
 .slick-arrow{
     position: absolute;
@@ -100,7 +100,7 @@
         }
         &:hover{
             transition: all .5s;
-            background: #ffde00 url("../img/bgPaw.png") 20px 18px; 
+            background: $secondaryBGcol url("../img/bgPaw.png") 20px 18px; 
         }
         &:after {
         content: '';

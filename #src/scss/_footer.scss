@@ -70,7 +70,7 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 23px;
-        color: $secondaryCol;
+        color: $primaryBGcol;
         @media screen and (max-width: 425px) {
             font-size: 17px;
         }
@@ -99,7 +99,7 @@
     text-decoration: none;
     width: 38px;
     height: 38px;
-    border: 1px solid $secondaryCol;
+    border: 1px solid $primaryBGcol;
     border-radius: 50%;
     position: relative;
     margin: 0 auto 34px;
@@ -113,7 +113,7 @@
             width: 6px;
             height: 6px;
             border: solid;
-            border-color: $secondaryCol;
+            border-color: $primaryBGcol;
             border-width: 0 1px 1px 0;
             transform: rotate(45deg) translate(-75%, -10%);
         }
@@ -129,8 +129,8 @@
 }
 .up-button {
     z-index: 2;
-    background-color: #2ea260;
-    border-color: #FFDF00;
+    background-color: $primaryBGcol;
+    border-color: $secondaryBGcol;
     margin: 0;
     position: fixed;
     cursor: pointer;
@@ -139,8 +139,8 @@
     opacity: .6;
     transition-duration: .3s;
         @media screen and (max-width: 620px) {
-            right: 10px;
-            bottom: 10px;
+            right: 20px;
+            bottom: 20px;
         }
     &::after {
         border-color: #FFDF00;

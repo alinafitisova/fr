@@ -1,3 +1,6 @@
+.contacts-main {
+    overflow-x: hidden;
+}
 .contacts-wrapper {
     margin-top: 150px;
     display: flex;
@@ -13,25 +16,26 @@
             margin-bottom: -6.2%;
         }
     }
-    
     & a {
         text-decoration: none;
         color: $menuCol;
+        font-weight: 600;
+        transition: all .5s;
             &:hover {
                 text-decoration: underline;
+                color: $secondaryBGcol;
             }
-
     }
     &__heading {
         @include heading (center);
         margin: 0;
     }
     &__bg {
-        height: 80%;
         width: 100vw;
-        background: $secondaryCol;
+        background: $primaryBGcol;
         padding: 50px 30px 30px 30px;
         box-sizing: border-box;
+        margin-bottom: 45px;
         @media screen and (max-width: 375px) {
             padding: 15px; 
         }
@@ -71,7 +75,7 @@
     }
     &__subtitle {
         font-size: 20px;
-        text-align: center;
+        text-align: left;
         font-weight: 700;
         color: $menuCol;
         @media screen and (max-width: 1024px) {

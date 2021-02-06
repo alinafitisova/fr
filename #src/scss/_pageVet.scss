@@ -10,6 +10,7 @@
 .vet {
     height: 100%;
     width: 100%;
+    margin-bottom: 50px;
     &__title {
         @include title(center);
     }
@@ -25,43 +26,70 @@
         @media screen and (max-width: 425px) {
             height: 40vh;
         }
-        @media screen and (max-width: 375px) {
-            background-size: cover; 
-            background-position: right bottom;
-        }
     }
 }
 .memor {
+    margin-bottom: 70px;
     &__title {
         @include title(center);
     }
     &__box {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         @media screen and (max-width: 768px) {
             flex-direction: column;
+            align-items: center;
         }
     }
-    &__list {
-        @include description(left);
+    & figure {
+        margin: 0;
         width: 50%;
-        list-style: none;
-        margin-left: 20px;
+    }
+    &__list {
+        width: 50%;
+        list-style-type:none;
+        font-size: 18px;
+        line-height: 37px;
+        margin: 0 0 0 20px;
         padding-left: 0;
+        @media screen and (max-width: 1024px) {
+            font-size: 16px;
+            line-height: 25px;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 13px;
+            width: 100%;
+            margin: 0;
+        }
     }
     &__item {
             &::before {
                 content: "\1F43E";  
-                color: #ffde00; 
+                color: $secondaryBGcol; 
                 font-weight: bold; 
                 font-size: 25px;
                 display: inline-block;
                 width: 35px;
             }
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+        & span {
+            font-weight: 600;
+        }
     }
     &__subtitle {
         @include subtitle(center);
+        & a {
+            text-decoration: none;
+            color: inherit;
+            transition: all .3s;
+                &:hover {
+                    text-decoration: underline;
+                    color: $primaryBGcol;
+                }
+        }
     }
     &__left{
             max-width: 100%;

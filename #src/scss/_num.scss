@@ -7,7 +7,7 @@
         display: flex;
         height: 70vh;
         margin-bottom: 100px;
-        background: url("../img/bgPaw.png") 20px 30px; 
+        background: url(../img/bgPlentyPaw.png) 20px 18px;
 	
         @media screen and (max-width: 768px) {
             flex-direction: column;
@@ -54,9 +54,8 @@
     width: 28%;
     height: 100%;
         @media screen and (max-width: 768px) {
-                background-position:  center;
                 width: 90%;
-                margin: 15px 0;
+                margin-top: 7px;
         }
         @media screen and (max-width: 425px) {
                 width: 100%; 
@@ -74,6 +73,9 @@
 }
 .card-middle {
     height: 50%;
+    @media screen and (max-width: 768px) {
+        margin-top: 7px;
+}
 }
 .front,
 .back {
@@ -96,7 +98,7 @@
     color: inherit;
 }
 .back {
-    background: #ffde00;
+    background: $secondaryBGcol url(../img/bgPlentyPaw.png) 20px 18px;
     transform: rotateY(-180deg);
     color: $primaryCol;
     padding: 10px  15px  10px  15px;
@@ -120,11 +122,11 @@
             overflow: scroll;
         }
         & a {
-            font-weight: 500;
-            text-decoration: none;
-            color:inherit;
+            font-weight: 600;
+            text-decoration: underline;
+            color: inherit;
             &:hover {
-                text-decoration: underline;
+                text-decoration: none;
             }
         }
             font-size: 17px;

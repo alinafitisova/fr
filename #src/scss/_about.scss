@@ -5,9 +5,9 @@
     background-size: cover;
     margin: -12px 0 100px;
     padding-top: 25px;
-    @media screen and (max-width: 660px) {
-        margin-bottom: 170px;
-    }
+        @media screen and (max-width: 660px) {
+            margin-bottom: 190px;
+        }
 	&__inner {
         height: 65vh;
         width: 100%;
@@ -34,7 +34,7 @@
         background-size: cover;  
 	}
 	&__left {
-        background: $cardCol;
+        background: $cardBGcol;
         padding: 10px 20px;
         box-sizing: border-box;
 	}
@@ -68,10 +68,10 @@
         font-weight: 700;
         font-size: 15px;
         background: transparent;
-        border: 4px $secondaryCol solid;
+        border: 4px $primaryBGcol solid;
         border-bottom: none;
         text-decoration: none;
-        color: $secondaryCol;
+        color: $primaryBGcol;
         display: inline-block;
         transition: all .5s;
         position: relative;
@@ -86,12 +86,12 @@
             border-color: #a7a40b9a;
             box-shadow: 0px 3px 0px #a7a40b;
             transition: all .5s;
-            background: #ffde00 url("../img/bgPaw.png") 20px 18px; 
+            background: $secondaryBGcol url("../img/bgPaw.png") 20px 18px; 
             }
     }
 
 .btn {
-    @include btn($secondaryCol, #fff, 20px , 60px ,$primaryCol);
+    @include btn($primaryBGcol, #fff, 20px , 60px ,$primaryCol);
     display: inline-block;
     }
 }

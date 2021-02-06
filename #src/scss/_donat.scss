@@ -1,29 +1,108 @@
   // -------------DONAT MODAL--------------//
-.donateLink {
+.donate-dog,
+.donate-help {
     display: block;
-    text-decoration: none;
-    font-weight: 700;
-    background: #ffde00 url("../img/bgPaw.png") 20px 18px; 
-    border-top:  #ffde00;
-    border-radius: 10%;
-    width: 90px;
-    height: 50px;
-    transform: rotate(-90deg);
-    transform-origin: left top 0;
-    position: fixed;
-    opacity: 0.8;
-    right: -40px;
-    top: 195px;
-    text-align: center;
-    padding-top: 15px;
     cursor: pointer;
     z-index: 8;
     transition: all .5s;
-    animation: donate 2s infinite ease;
     &:hover {
-        // box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
         opacity: 1;
-        transition: all .5s;
+    }
+}
+.donate-dog {
+    width: 115px;
+    height: 127px;
+    left: 20px;
+    bottom: 20px;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    animation: dog 1.5s 0.4s both;
+    -webkit-animation-name: dog 1.5s 0.4s both;
+        @media screen and (max-width: 500px) {
+            width: 88px;
+            height: 98px;
+            left: 5px;
+        }
+}
+.donate-help {
+    position: absolute;
+    top: -3px;
+    right: 5px;
+    width: 66px;
+    animation: help-billboard 15.5s 2.2s infinite both;
+    -webkit-animation: help-billboard 15.5s 2s infinite both;
+    @media screen and (max-width: 500px) {
+        width: 50px;
+        top: -1px;
+        right: 4px;
+        @-webkit-keyframes help-billboard {
+            30%{
+                -webkit-transform: rotate(12deg) translateX(7px);
+                transform: rotate(12deg) translateX(5px);
+            }
+            60%{
+                -webkit-transform: rotate(-10deg) translateX(-6px);
+                transform: rotate(-11deg) translateX(-5px);
+            }
+            75%{
+                -webkit-transform: rotate(12deg) translateX(7px);
+                transform: rotate(12deg) translateX(5px);
+            }
+        }
+    }
+}
+
+@-webkit-keyframes dog {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
+        }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(25px, 0, 0);
+        transform: translate3d(25px, 0, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(5px, 0, 0);
+        transform: translate3d(5px, 0, 0);
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@-webkit-keyframes help-billboard {
+    0%{
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        
+    }
+    30%{
+        -webkit-transform: rotate(12deg) translateX(7px);
+        transform: rotate(12deg) translateX(7px);
+    }
+    60%{
+        -webkit-transform: rotate(-10deg) translateX(-6px);
+        transform: rotate(-10deg) translateX(-6px);
+    }
+    75%{
+        -webkit-transform: rotate(12deg) translateX(7px);
+        transform: rotate(12deg) translateX(7px);
+    }
+    100%{
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
     }
 }
 .donatModal {
@@ -61,21 +140,21 @@
     }   
     &__link img {
         max-width: 80%;
-        transition: all .2s ease-in-out; 
+        transition: all .3s ease-in-out; 
+        border-radius: 5%;
             &:hover { 
                 transform: scale(1.1); 
-                // box-shadow: 0 1px 10px 0 rgb(0 0 0 / 20%);
+                box-shadow: 0 1px 10px 0 rgb(0 ,0 ,0 / 20%);
             }
             
     }
 }
 #donatModal {
-    height: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     max-width: 50%; 
-    max-height: 70%;
-    padding: 35px 20px;
+    padding: 30px 20px;
     border-radius: 4px;
     background: #fafafa url("../img/bgPlentyPaw.png") 20px 18px; 
     position: fixed;
@@ -87,7 +166,6 @@
     text-align: center;box-sizing: border-box;
     @media screen and (max-width: 1124px) {
         max-width: 60%; 
-        max-height: 75%;
     }
     @media screen and (max-width: 768px) {
         max-width: 65%; 
@@ -98,7 +176,6 @@
     @media screen and (max-width: 425px) {
         padding: 20px 20px;
         max-width: 90%; 
-        max-height: 80%;
     }
 }
 #donatModal #donatModal__close {

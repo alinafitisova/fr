@@ -9,6 +9,9 @@
         align-items: center;
         justify-content: space-between;
         margin-top: 150px;
+        @media screen and (max-width: 452px) {
+            margin-bottom: 40px;
+        }
         @media screen and (max-width: 650px) {
             margin-top: 300px;
         }
@@ -74,7 +77,7 @@
 
 	
 	&__description {
-        background: $cardCol;
+        background: $cardBGcol;
         padding: 10px 20px;
         box-sizing: border-box;
 	}
@@ -112,7 +115,7 @@
         transition: max-height 0.8s;
             &.short{
                 max-height: 100%;
-                overflow:overlay;
+                overflow: hidden;
             }
     }   
 	&__btn {
@@ -120,11 +123,11 @@
         font-weight: 700;
         font-size: 15px;
         background: transparent;
-        border: 4px $secondaryCol solid;
+        border: 4px $primaryBGcol solid;
         border-bottom: none;
         padding: 10px 10px;
         text-decoration: none;
-        color: $secondaryCol;
+        color: $primaryBGcol;
         display: inline-block;
         align-self: center;
         transition: all .5s;
@@ -138,7 +141,7 @@
             border-color: #a7a40b9a;
             box-shadow: 0px 3px 0px #a7a40b;
             transition: all .5s;
-            background: #ffde00 url("../img/bgPaw.png") 20px 18px; 
+            background: $secondaryBGcol url("../img/bgPaw.png") 20px 18px; 
             }
     }
 .readMore {
@@ -147,7 +150,7 @@
     align-self: flex-end;
 }
 .btn {
-    @include btn($secondaryCol, #fff, 20px , 60px ,$primaryCol);
+    @include btn($primaryBGcol, #fff, 20px , 60px ,$primaryCol);
     display: inline-block;
     text-align: center;
     
