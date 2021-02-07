@@ -506,7 +506,7 @@ template {
 }
 
 .header__link:hover {
-  background: #ffde00 url("../img/bgPaw.png") 20px 18px;
+  background: #FFDF00 url("../img/bgPaw.png") 20px 18px;
   top: 2px;
   -webkit-box-shadow: 0px 4px 0px #a7a40b;
           box-shadow: 0px 4px 0px #a7a40b;
@@ -540,7 +540,7 @@ template {
 .header__burger:before,
 .header__burger:after {
   content: '';
-  background-color: #2ea260;
+  background-color: #00A35C;
   position: absolute;
   width: 40px;
   height: 6px;
@@ -576,7 +576,7 @@ template {
 
 .header__burger span {
   position: absolute;
-  background-color: #2ea260;
+  background-color: #00A35C;
   left: 0;
   width: 40px;
   height: 6px;
@@ -601,7 +601,7 @@ template {
   width: 25%;
   height: 70%;
   overflow: auto;
-  background: #2ea260;
+  background: #00A35C;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -739,6 +739,35 @@ template {
   background-position: top right;
   background-size: contain;
   padding-top: 50px;
+  position: relative;
+}
+
+.pet-tag {
+  background: #FFDF00;
+  z-index: 3;
+  position: absolute;
+  bottom: 14%;
+  right: 20%;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  -webkit-box-shadow: 0px 0px 15px 8px rgba(34, 60, 80, 0.07);
+  box-shadow: 0px 0px 15px 8px rgba(34, 60, 80, 0.07);
+  padding: 0.2em  0.8em;
+}
+
+.pet-tag__name {
+  display: block;
+  font-weight: 500;
+  color: #232323;
+  font-size: 19px;
+  line-height: 38px;
+}
+
+.pet-tag__descr {
+  display: block;
+  color: #23232385;
+  font-size: 12px;
+  margin: 3px 0;
 }
 
 .header-slider .slick-arrow {
@@ -765,7 +794,7 @@ template {
 }
 
 .header-slider .slick-dots li.slick-active button {
-  background: #2ea260;
+  background: #00A35C;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
@@ -1085,7 +1114,7 @@ template {
   font-family: "Roboto-Bold";
   font-weight: 700;
   font-size: 18px;
-  background: #2ea260;
+  background: #00A35C;
   padding: 20px 20px;
   text-decoration: none;
   color: #fff;
@@ -1108,7 +1137,7 @@ template {
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
-  background: #ffde00 url("../img/bgPaw.png") 20px 18px;
+  background: #FFDF00 url("../img/bgPaw.png") 20px 18px;
 }
 
 .slick-arrow {
@@ -1130,7 +1159,7 @@ template {
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
-  background: #ffde00 url("../img/bgPaw.png") 20px 18px;
+  background: #FFDF00 url("../img/bgPaw.png") 20px 18px;
 }
 
 .slick-arrow:after {
@@ -1327,11 +1356,11 @@ template {
   font-weight: 700;
   font-size: 15px;
   background: transparent;
-  border: 4px #2ea260 solid;
+  border: 4px #00A35C solid;
   border-bottom: none;
   padding: 10px 10px;
   text-decoration: none;
-  color: #2ea260;
+  color: #00A35C;
   display: inline-block;
   -ms-flex-item-align: center;
       align-self: center;
@@ -1354,7 +1383,7 @@ template {
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
-  background: #ffde00 url("../img/bgPaw.png") 20px 18px;
+  background: #FFDF00 url("../img/bgPaw.png") 20px 18px;
 }
 
 .adopt .readMore {
@@ -1368,7 +1397,7 @@ template {
   font-family: "Roboto-Bold";
   font-weight: 700;
   font-size: 18px;
-  background: #2ea260;
+  background: #00A35C;
   padding: 20px 60px;
   text-decoration: none;
   color: #fff;
@@ -1393,7 +1422,7 @@ template {
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
-  background: #ffde00 url("../img/bgPaw.png") 20px 18px;
+  background: #FFDF00 url("../img/bgPaw.png") 20px 18px;
 }
 
 .sibling-fade {
@@ -1529,7 +1558,7 @@ template {
 }
 
 .back {
-  background: #ffde00 url(../img/bgPlentyPaw.png) 20px 18px;
+  background: #FFDF00 url(../img/bgPlentyPaw.png) 20px 18px;
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
   color: #232323;
@@ -1685,10 +1714,10 @@ template {
   font-weight: 700;
   font-size: 15px;
   background: transparent;
-  border: 4px #2ea260 solid;
+  border: 4px #00A35C solid;
   border-bottom: none;
   text-decoration: none;
-  color: #2ea260;
+  color: #00A35C;
   display: inline-block;
   -webkit-transition: all .5s;
   -o-transition: all .5s;
@@ -1711,14 +1740,14 @@ template {
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
-  background: #ffde00 url("../img/bgPaw.png") 20px 18px;
+  background: #FFDF00 url("../img/bgPaw.png") 20px 18px;
 }
 
 .about .btn {
   font-family: "Roboto-Bold";
   font-weight: 700;
   font-size: 18px;
-  background: #2ea260;
+  background: #00A35C;
   padding: 20px 60px;
   text-decoration: none;
   color: #fff;
@@ -1742,7 +1771,7 @@ template {
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
-  background: #ffde00 url("../img/bgPaw.png") 20px 18px;
+  background: #FFDF00 url("../img/bgPaw.png") 20px 18px;
 }
 
 .footer__body {
@@ -1836,7 +1865,7 @@ template {
   font-weight: 500;
   font-size: 18px;
   line-height: 23px;
-  color: #2ea260;
+  color: #00A35C;
 }
 
 .footer-menu__subcategory {
@@ -1854,7 +1883,7 @@ template {
   text-decoration: none;
   width: 38px;
   height: 38px;
-  border: 1px solid #2ea260;
+  border: 1px solid #00A35C;
   border-radius: 50%;
   position: relative;
   margin: 0 auto 34px;
@@ -1870,7 +1899,7 @@ template {
   width: 6px;
   height: 6px;
   border: solid;
-  border-color: #2ea260;
+  border-color: #00A35C;
   border-width: 0 1px 1px 0;
   -webkit-transform: rotate(45deg) translate(-75%, -10%);
       -ms-transform: rotate(45deg) translate(-75%, -10%);
@@ -1892,8 +1921,8 @@ template {
 
 .up-button {
   z-index: 2;
-  background-color: #2ea260;
-  border-color: #ffde00;
+  background-color: #00A35C;
+  border-color: #FFDF00;
   margin: 0;
   position: fixed;
   cursor: pointer;
@@ -1978,7 +2007,7 @@ template {
 .aboutUs__blockquote:before,
 .aboutUs__blockquote:after {
   position: absolute;
-  color: #2ea260;
+  color: #00A35C;
   font-size: 100px;
   font-family: Times, sans-serif;
   line-height: 100px;
@@ -1997,7 +2026,7 @@ template {
 }
 
 .aboutUs__blockquote cite {
-  color: #2ea260;
+  color: #00A35C;
   font-size: 15px;
   padding-top: 10px;
   display: block;
@@ -2098,7 +2127,7 @@ template {
 
 .achievement__description a:hover {
   text-decoration: underline;
-  color: #2ea260;
+  color: #00A35C;
 }
 
 .help-wrapper {
@@ -2160,7 +2189,7 @@ template {
 .help__blockquote:before,
 .help__blockquote:after {
   position: absolute;
-  color: #2ea260;
+  color: #00A35C;
   font-size: 100px;
   font-family: Times, sans-serif;
   line-height: 100px;
@@ -2179,7 +2208,7 @@ template {
 }
 
 .help__blockquote cite {
-  color: #2ea260;
+  color: #00A35C;
   font-size: 15px;
   padding-top: 10px;
   display: block;
@@ -2252,7 +2281,7 @@ template {
 }
 
 .payment-list__numberOfCard {
-  color: #2ea260;
+  color: #00A35C;
   font-weight: 700;
 }
 
@@ -2294,7 +2323,7 @@ template {
 .box a:hover,
 .clinics a:hover {
   text-decoration: underline;
-  color: #2ea260;
+  color: #00A35C;
 }
 
 .box__area,
@@ -2326,7 +2355,7 @@ template {
   position: absolute;
   display: block;
   content: '+';
-  color: #2ea260;
+  color: #00A35C;
   float: left;
   font-size: 1.8em;
   font-weight: bold;
@@ -2389,7 +2418,7 @@ tbody tr:nth-child(even) {
 .curator a {
   text-decoration: none;
   font-weight: 600;
-  color: #2ea260;
+  color: #00A35C;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
@@ -2654,7 +2683,7 @@ tbody tr:nth-child(even) {
 
 .memor__item::before {
   content: "\1F43E";
-  color: #ffde00;
+  color: #FFDF00;
   font-weight: bold;
   font-size: 25px;
   display: inline-block;
@@ -2687,7 +2716,7 @@ tbody tr:nth-child(even) {
 
 .memor__subtitle a:hover {
   text-decoration: underline;
-  color: #2ea260;
+  color: #00A35C;
 }
 
 .memor__left {
@@ -2736,7 +2765,7 @@ tbody tr:nth-child(even) {
 
 .contacts a:hover {
   text-decoration: underline;
-  color: #ffde00;
+  color: #FFDF00;
 }
 
 .contacts__heading {
@@ -2751,7 +2780,7 @@ tbody tr:nth-child(even) {
 
 .contacts__bg {
   width: 100vw;
-  background: #2ea260;
+  background: #00A35C;
   padding: 50px 30px 30px 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -3841,6 +3870,16 @@ body {
 }
 
 @media screen and (max-width: 550px) {
+  .pet-tag__name {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .pet-tag__descr {
+    font-size: 10px;
+    line-height: 11px;
+  }
+
   .card {
     height: 35vh;
   }
@@ -3955,9 +3994,22 @@ body {
 }
 
 @media screen and (max-width: 425px) {
+  .header-slider {
+    height: 93vh;
+  }
+
+  .header-slider__item {
+    height: 93vh;
+  }
+
   .header-slider__inner {
     background-size: cover;
     background-attachment: local;
+  }
+
+  .pet-tag {
+    bottom: 17%;
+    right: 1%;
   }
 
   .header-heading__title {
@@ -4242,25 +4294,25 @@ body {
   }
 }
 
-.webp .header__link:hover{ background: #ffde00 url(../img/bgPaw.webp) 20px 18px; }
+.webp .header__link:hover{ background: #FFDF00 url(../img/bgPaw.webp) 20px 18px; }
 
 .webp #donatModal{ background: #fafafa url(../img/bgPlentyPaw.webp) 20px 18px; }
 
-.webp .btn:hover{ background: #ffde00 url(../img/bgPaw.webp) 20px 18px; }
+.webp .btn:hover{ background: #FFDF00 url(../img/bgPaw.webp) 20px 18px; }
 
-.webp .slick-arrow:hover{ background: #ffde00 url(../img/bgPaw.webp) 20px 18px; }
+.webp .slick-arrow:hover{ background: #FFDF00 url(../img/bgPaw.webp) 20px 18px; }
 
-.webp .adopt__btn:hover{ background: #ffde00 url(../img/bgPaw.webp) 20px 18px; }
+.webp .adopt__btn:hover{ background: #FFDF00 url(../img/bgPaw.webp) 20px 18px; }
 
-.webp .adopt .btn:hover{ background: #ffde00 url(../img/bgPaw.webp) 20px 18px; }
+.webp .adopt .btn:hover{ background: #FFDF00 url(../img/bgPaw.webp) 20px 18px; }
 
 .webp .num__cards{ background: url(../img/bgPlentyPaw.webp) 20px 18px; }
 
-.webp .back{ background: #ffde00 url(../img/bgPlentyPaw.webp) 20px 18px; }
+.webp .back{ background: #FFDF00 url(../img/bgPlentyPaw.webp) 20px 18px; }
 
-.webp .about__btn:hover{ background: #ffde00 url(../img/bgPaw.webp) 20px 18px; }
+.webp .about__btn:hover{ background: #FFDF00 url(../img/bgPaw.webp) 20px 18px; }
 
-.webp .about .btn:hover{ background: #ffde00 url(../img/bgPaw.webp) 20px 18px; }
+.webp .about .btn:hover{ background: #FFDF00 url(../img/bgPaw.webp) 20px 18px; }
 
 .webp .box__area, .webp .clinics__area{ background: #ffdd003f url(../img/bgPaw.webp) 23px 23px; }
 

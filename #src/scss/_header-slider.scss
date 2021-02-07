@@ -12,8 +12,14 @@
     height: 100vh;
     position: relative;
     z-index: -1;
+    @media screen and (max-width: 425px) {
+        height: 93vh;
+    }
     &__item {
         height: 100vh;
+        @media screen and (max-width: 425px) {
+            height: 93vh;
+        }
     }
     &__inner{
         width: 100%;
@@ -26,6 +32,7 @@
         background-position: top right;
         background-size: contain;
         padding-top: 50px;
+        position: relative;
         @media screen and (max-width: 1200px) {
             background-position: top 40px right;
         }
@@ -39,7 +46,44 @@
             
         }
     }
-}   
+}  
+.pet-tag {
+    background: $secondaryBGcol;
+    z-index: 3;
+    position: absolute;
+    bottom: 14%;
+    right: 20%;
+    text-align-last: left;
+    -webkit-box-shadow: 0px 0px 15px 8px rgba(34, 60, 80, 0.07);
+    -moz-box-shadow: 0px 0px 15px 8px rgba(34, 60, 80, 0.07);
+    box-shadow: 0px 0px 15px 8px rgba(34, 60, 80, 0.07);
+    padding: 0.2em  0.8em;
+    @media screen and (max-width: 425px) {
+        bottom: 17%;
+        right: 1%;
+    }
+    &__name {
+        display: block;
+        font-weight: 500;
+        color: $primaryCol;
+        font-size: 19px;
+        line-height: 38px;
+        @media screen and (max-width: 550px) {
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+    &__descr{
+        display: block;
+        color: #23232385;
+        font-size: 12px;
+        margin: 3px 0;
+        @media screen and (max-width: 550px) {
+            font-size: 10px;
+            line-height: 11px;
+        }
+    }
+} 
 .header-slider .slick-arrow {
     display: none;
 }
@@ -50,7 +94,6 @@
     @media screen and (max-width: 1024px) {
         margin-top: -30px;
         justify-content: center;
-    
     }
     & li{
         list-style: none;
