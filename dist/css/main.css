@@ -1386,7 +1386,7 @@ template {
   background: #FFDF00 url("../img/bgPaw.png") 20px 18px;
 }
 
-.adopt .readMore {
+.adopt .read-more {
   font-size: 12px;
   cursor: pointer;
   -ms-flex-item-align: end;
@@ -1623,13 +1623,13 @@ template {
   margin: 0;
 }
 
-.readMore {
+.read-more {
   font-size: 12px;
   cursor: pointer;
   text-align: right;
 }
 
-.readMore:hover {
+.read-more:hover {
   font-size: 13px;
   -webkit-transition: 0.8s;
   -o-transition: 0.8s;

@@ -48,9 +48,9 @@
         });
     }
     
-    // readMore function
+    // read-more function
 
-    $('.readMore').click(function(event) {
+    $('.read-more').click(function(event) {
         $('.adopt__text, .back__description').toggleClass('short');
     });
      // To up window button
@@ -89,20 +89,4 @@ const docWidth = document.documentElement.offsetWidth;
             console.log(el);
         }
     }
-)
-(function () { 
-    window.onload = function (){
-    // set year to .currentYear elements
-    const currentYearElements = 
-    Array.from(document.querySelectorAll('.currentYear'));
-    const now = new Date().getFullYear();
-    currentYearElements.forEach( elem => {
-        elem.innerHTML = now;
-    });
-    //dynamic changing numbers of the year
-
-    const yearBirthFund = new Date().getFullYear() - 2011;
-    document.getElementById("yearsFund").innerHTML = yearBirthFund;
-    }
-})();
-
+);
