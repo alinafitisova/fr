@@ -736,7 +736,7 @@ template {
       -ms-flex-align: start;
           align-items: flex-start;
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: top 20px right;
   background-size: contain;
   padding-top: 50px;
   position: relative;
