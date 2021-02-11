@@ -44,10 +44,14 @@ body {
 //     overflow-x: hidden;
 // }
 .container {
-    max-width: 1500px;
+    max-width: 1800px;
     margin: auto;
     padding: 0 35px;
     box-sizing: border-box;
+    @media (max-width: 1920px) {
+        max-width: 1500px;
+        padding: 0 35px;
+    }
     @media (max-width: 1440px) {
         max-width: 1180px;
         padding: 0 20px;
