@@ -706,7 +706,7 @@ template {
   background-repeat: no-repeat;
   background-position: top 70px right;
   background-size: contain;
-  padding-top: 50px;
+  padding-top: 88px;
   position: relative;
 }
 
@@ -751,9 +751,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: -200px;
+  margin-top: -100px;
   outline: none;
-  padding: 0;
+  padding-left: 25px;
 }
 
 .header-slider .slick-dots li {
@@ -3011,10 +3011,22 @@ body {
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
   .container {
     max-width: 1180px;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
     padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .header-slider .slick-dots {
+    padding-left: 60px;
   }
 }
 
@@ -3048,8 +3060,14 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+  .pet-tag {
+    bottom: 15%;
+    right: 15%;
+  }
+
   .header-slider .slick-dots {
-    margin-top: -30px;
+    margin-top: -28px;
+    padding-left: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

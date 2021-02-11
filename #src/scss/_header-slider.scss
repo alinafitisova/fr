@@ -20,7 +20,7 @@
             height: 93vh;
         }
     }
-    &__inner{
+    &__inner {
         width: 100%;
         height: 100vh;
         display: flex;
@@ -30,7 +30,7 @@
         background-repeat: no-repeat;
         background-position: top 70px right;
         background-size: contain;
-        padding-top: 50px;
+        padding-top: 88px;
         position: relative;
         @media screen and (max-width: 1200px) {
             background-position: top 40px right;
@@ -61,6 +61,10 @@
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
     padding: 0.2em  0.8em;
     z-index: 8;
+    @media screen and (max-width: 1024px) {
+        bottom: 15%;
+        right: 15%;
+    }
     @media screen and (max-width: 425px) {
         bottom: 18%;
         right: 1%;
@@ -92,11 +96,15 @@
 }
 .header-slider .slick-dots {
     display: flex;
-    margin-top: -200px;
+    margin-top: -100px;
     outline: none;
-    padding: 0;
+    padding-left: 25px;
+    @media screen and (max-width: 1280px) {
+        padding-left: 60px;
+    }
     @media screen and (max-width: 1024px) {
-        margin-top: -30px;
+        margin-top: -28px;
+        padding-left: 0;
         justify-content: center;
     }
     & li {
