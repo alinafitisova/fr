@@ -2384,7 +2384,7 @@ template {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
-  padding: 5px  10px;
+  padding: 5px 10px;
   font-size: 12px;
 }
 
@@ -3597,10 +3597,6 @@ body {
     font-size: 15px;
     line-height: 25px;
   }
-
-  .contacts__subtitle {
-    font-size: 16px;
-  }
 }
 
 @media screen and (max-width: 800px) {
@@ -3777,6 +3773,7 @@ body {
 
   .adopting__box picture {
     width: 100%;
+    margin: 0 auto;
   }
 
   .adopting__text,
@@ -3850,7 +3847,7 @@ body {
   }
 
   .help__blockquote {
-    margin: 25px 30px 0;
+    margin: 25px auto 0;
   }
 
   .finance-help__title {
@@ -3872,6 +3869,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    margin-bottom: -20px;
   }
 
   .finance-help__right {
@@ -4045,10 +4043,6 @@ body {
 
   .contacts__text {
     font-size: 12px;
-  }
-
-  .contacts__subtitle {
-    font-size: 14px;
   }
 }
 
@@ -4288,7 +4282,7 @@ body {
   }
 
   .payment-list {
-    padding-left: 20px;
+    padding-left: 15px;
   }
 
   .kindOF-help {
@@ -4426,13 +4420,38 @@ body {
     font-size: 13px;
   }
 
+  .adopting-wrapper {
+    margin-top: 130px;
+  }
+
   .adopting__heading {
     margin-top: 0;
     font-size: 26px;
   }
 
+  .adopting__heading {
+    margin-bottom: 20px;
+  }
+
+  .adopting__blockquote {
+    font-size: 15px;
+    line-height: 25px;
+    padding: 10px 0px;
+    margin: 10px auto;
+  }
+
   .adopting__title {
     margin-top: 20px;
+  }
+
+  .adopting__title {
+    max-width: 90%;
+    margin: 50px auto 20px;
+  }
+
+  .about-wrapper {
+    margin-top: 120px;
+    margin-bottom: 25px;
   }
 
   .about-us__heading {
@@ -4440,20 +4459,48 @@ body {
     font-size: 26px;
   }
 
+  .about-us__heading {
+    margin-bottom: 20px;
+  }
+
+  .about-us__blockquote {
+    font-size: 15px;
+    line-height: 25px;
+    padding: 10px 0px;
+    margin: 10px auto;
+    max-width: 80%;
+  }
+
   .history-about__title {
     margin-top: 20px;
+  }
+
+  .history-about__title {
+    margin: 20px 0 15px;
+  }
+
+  .history-about__img {
+    margin: 0 auto 10px;
   }
 
   .location-shelter__title {
     margin-top: 20px;
   }
 
+  .location-shelter__title {
+    margin: 30px 0 10px;
+  }
+
   .achievement__title {
     margin-top: 20px;
   }
 
+  .achievement__title {
+    margin: 30px 0 10px;
+  }
+
   .help-wrapper {
-    margin-top: 100px;
+    margin-top: 120px;
   }
 
   .help__heading {
@@ -4465,8 +4512,19 @@ body {
     height: 40vh;
   }
 
+  .help__blockquote {
+    font-size: 15px;
+    line-height: 25px;
+    padding: 10px 0px;
+    margin: 10px auto;
+  }
+
   .finance-help__title {
     margin-top: 20px;
+  }
+
+  .finance-help__payment {
+    margin-bottom: 0;
   }
 
   .box__table,
@@ -4475,16 +4533,49 @@ body {
     line-height: 23px;
   }
 
+  .sum-odd {
+    background: #ffdd0025 url("../img/bgPaw.png") 81% 0%/auto auto no-repeat;
+  }
+
+  .sum-even {
+    background: #ffdd0025 url("../img/bgPaw.png") 96% 0%/auto auto no-repeat;
+  }
+
   .how-toHelp__title {
     margin-top: 20px;
+  }
+
+  .how-toHelp__title {
+    margin: 55px auto 20px;
+    max-width: 90%;
+  }
+
+  .how-toHelp__subtitle {
+    margin: 20px 0;
   }
 
   .curator__title {
     margin-top: 20px;
   }
 
+  .curator__title {
+    margin: 20px 0 10px;
+  }
+
   .cruel__title {
     margin-top: 20px;
+  }
+
+  .cruel__box img {
+    margin-top: 15px;
+  }
+
+  .vet-wrapper {
+    margin-top: 100px;
+  }
+
+  .vet {
+    margin-bottom: 0px;
   }
 
   .vet__heading {
@@ -4492,12 +4583,21 @@ body {
     font-size: 26px;
   }
 
+  .vet__heading {
+    margin-bottom: 10px;
+  }
+
   .vet__bgImg {
     height: 40vh;
+    margin-bottom: 10px;
   }
 
   .memor__title {
     margin-top: 20px;
+  }
+
+  .memor__title {
+    margin: 30px 0 10px;
   }
 
   .contacts__heading {
@@ -4511,6 +4611,14 @@ body {
 
   .contacts__title {
     margin-top: 20px;
+  }
+
+  .contacts__title {
+    text-align: center;
+  }
+
+  .contacts__description {
+    line-height: 27px;
   }
 }
 
@@ -4538,13 +4646,6 @@ body {
     font-size: 12px;
   }
 
-  .adopting__blockquote {
-    font-size: 15px;
-    line-height: 25px;
-    padding: 10px 0px;
-    margin: 10px 30px;
-  }
-
   .adopting__blockquote:before,
   .adopting__blockquote:after {
     font-size: 50px;
@@ -4553,13 +4654,6 @@ body {
   .adopting__blockquote cite {
     font-size: 13px;
     line-height: 15px;
-  }
-
-  .about-us__blockquote {
-    font-size: 15px;
-    line-height: 25px;
-    padding: 10px 0px;
-    margin: 10px 30px;
   }
 
   .about-us__blockquote:before,
@@ -4575,13 +4669,6 @@ body {
   .help__photo-shelter {
     background-size: cover;
     background-position: right bottom;
-  }
-
-  .help__blockquote {
-    font-size: 15px;
-    line-height: 25px;
-    padding: 10px 0px;
-    margin: 10px 30px;
   }
 
   .help__blockquote:before,
@@ -4645,3 +4732,13 @@ body {
 .webp .sum-even{ background: #ffdd003f url(../img/bgPaw.webp) -42px -3px/100% auto no-repeat; }
 
 .webp tbody tr:nth-child(even){ background: #ffdd0025 url(../img/bgPlentyPaw.webp) 257px 5px; }
+
+@media screen and (max-width: 425px){
+
+  .webp .sum-odd{ background: #ffdd0025 url(../img/bgPaw.webp) 81% 0%/auto auto no-repeat; }
+}
+
+@media screen and (max-width: 425px){
+
+  .webp .sum-even{ background: #ffdd0025 url(../img/bgPaw.webp) 96% 0%/auto auto no-repeat; }
+}
