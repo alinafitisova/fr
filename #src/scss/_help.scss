@@ -4,16 +4,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center; 
+    @media screen and (max-width: 425px) {
+        margin-top: 100px;
+    }
 }
 .help {
     &__heading {
         @include heading (center);
+        margin-bottom: 50px;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 15px;
+        }
     }
     &__description {
         @include description(left); 
     }
     &__photo-shelter {
-        height: 50vh;
+        height: 65vh;
         width: 100%;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -31,10 +38,14 @@
     &__blockquote {
         position: relative;
         padding: 16px 24px;
-        margin: 16px 46px;    
+        margin: 50px auto;   
         font-size: 16px;
-        line-height: 20px;
+        line-height: 40px;
         text-align: center;
+        max-width: 55%;
+        @media screen and (max-width: 768px) {
+            margin: 25px 30px 0;  
+        }
         @media screen and (max-width: 375px) {
             font-size: 15px;
             line-height: 25px;
@@ -52,26 +63,16 @@
             @media screen and (max-width: 375px) {
                 font-size: 50px;
                 }
-            }
+        }
         &__blockquote:before {
             content: '“';
             left: -30px;
             top: -10px;
-            }
+        }
         &__blockquote:after {
             content: '”';
             right: -30px;
             bottom: -10px;
-            }
-        &__blockquote cite {
-            color: $primaryBGcol;
-            font-size: 15px;
-            padding-top: 10px;
-            display: block;
-            @media screen and (max-width: 375px) {
-                font-size: 13px;
-                line-height: 15px;
-                }
         }
 }
 .finance-help {
@@ -80,6 +81,10 @@
     &__title {
         @include title (center);
         line-height: 35px;
+        margin: 50px 0 40px;
+        @media screen and (max-width: 768px)  {
+            margin: 40px 0;
+        }
     }
     &__subtitle {
         @include subtitle (center);
@@ -89,6 +94,7 @@
         align-items: center;
         justify-content: space-between;
         height: 100%;
+        margin-bottom: -70px;
         @media screen and (max-width: 768px) {
             flex-direction: column;
             width: 100%;
@@ -108,11 +114,15 @@
         transform: none;
         padding: 5px  10px;
         font-size: 12px;
+        &:hover {
+            background: #ffdf00 url("../img/bgPaw.png") 83% 1% no-repeat;
+        }
     }
 }
 .payment-list {
     width: 60%;
-    margin: 30px 0;
+    margin: 0;
+    padding-left: 17px;
     @media screen and (max-width: 768px) {
         margin: 20px  0px  0px;
         width: 100%;
@@ -125,11 +135,17 @@
     }
     &__item:not(:last-child) {
         margin-bottom: 20px;
+        @media screen and (max-width: 768px)  {
+            margin-bottom: 10px;
+        }
     }
     &__numberOfCard {
         color: $primaryBGcol;
         font-weight: 700;
     }
+}
+.box {
+    margin-top: 50px;
 }
 .box ,
 .clinics {
@@ -140,7 +156,7 @@
         line-height: 30px;
         border-collapse: collapse;
         border: 1px #ccc solid;
-        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
         box-sizing: border-box;
         @media screen and (max-width: 768px) {
             font-size: 14px;
@@ -175,10 +191,7 @@
         text-align: center;
         font-weight: 700;
         padding: 20px  0px;
-        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
-        background: #ffdd003f url("../img/bgPaw.png") 23px 23px; 
-        transition: all .5s;
-        -webkit-transition: all .5s;
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
         cursor: pointer;
         margin-bottom: 10px;
             &::-webkit-details-marker {
@@ -199,6 +212,12 @@
             }
         }
     }
+.sum-odd {
+    background:#ffdd0025 url("../img/bgPaw.png") -724px -3px/100% auto no-repeat;
+}
+.sum-even {
+    background:#ffdd003f url("../img/bgPaw.png") -42px -3px/100% auto no-repeat;
+} 
 details[open] summary::after {
     content: "-";
     outline: none;
@@ -213,11 +232,11 @@ details[close] {
     -webkit-transition: all .5s;
 }
 tbody tr:nth-child(odd) {
-    background: #2ea26038;
+    background: #2ea2601e;
 }
 
 tbody tr:nth-child(even) {
-    background: #ffdd003f url(../img/bgPlentyPaw.png) 70px 1px;
+    background: #ffdd0025 url("../img/bgPlentyPaw.png") 257px 5px;
 }
 .kindOF-help {
     width: 100%;
@@ -261,16 +280,19 @@ tbody tr:nth-child(even) {
     &__title {
         @include title (center);
         line-height: 35px;
-    }
+        margin: 80px 0 40px;
+}
     &__subtitle {
         @include subtitle (center);
+        margin: 50px 0;
+        line-height: 35px;
     }
-    
 }
 .curator {
     width: 100%;
     &__title {
         @include title (center);
+        margin: 80px 0 40px;
         line-height: 35px;
     }
     &__subtitle {
@@ -308,11 +330,13 @@ tbody tr:nth-child(even) {
     width: 100%;
     &__title {
         @include title (center);
+        margin: 80px 0 40px;
         line-height: 35px;
     }
     &__subtitle {
         @include subtitle (center);
         color: rgba(226, 45, 45, 0.877);
+        font-weight: 500;
     }
     &__description {
         @include description(left); 

@@ -15,7 +15,7 @@ $mainFont: 'Roboto', sans-serif;
     color: $col;
     display: inline-block;
     text-align: center;
-    transition: all .5s;
+    transition: all .3s;
     position: relative;
     top: 0;
     box-shadow: 0px 5px 0px #247e4b;
@@ -23,8 +23,7 @@ $mainFont: 'Roboto', sans-serif;
         color: $hoverCol;
         top: 2px;
         box-shadow: 0px 4px 0px #a7a40b;
-        transition: all .5s;
-        background: $secondaryBGcol url("../img/bgPaw.png") 20px 18px; 
+        background: $secondaryBGcol url("../img/bgPaw.png")  86% -1% no-repeat; 
         }
 }
 @mixin heading ($textAl) {
@@ -70,10 +69,7 @@ $mainFont: 'Roboto', sans-serif;
     @media screen and (max-width: 425px) {
         margin-top: 20px;
     }
-    @media screen and (max-width: 375px) {
-        font-size: 20px;
-        line-height: 27px;
-    }
+    
 }
 @mixin subtitle ($textAl) {
     font-size: 20px;

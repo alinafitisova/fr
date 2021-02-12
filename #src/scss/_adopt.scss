@@ -119,41 +119,38 @@
             }
     }   
 	&__btn {
+        color: #000;
+        display: inline-block;
         font-family: $mainFont;
         font-weight: 700;
         font-size: 15px;
         background: transparent;
-        border: 4px $primaryBGcol solid;
-        border-bottom: none;
         padding: 10px 10px;
         text-decoration: none;
-        color: $primaryBGcol;
-        display: inline-block;
-        align-self: center;
+        border: 4px $primaryBGcol solid;
+        border-bottom: none;
+        text-align: center;
         transition: all .5s;
         position: relative;
         top: 0;
-        box-shadow: 0px 3px 0px #247e4b;
-        text-align: center;
-        &:hover {
-            color: #000;
-            top: 2px;
-            border-color: #a7a40b9a;
-            box-shadow: 0px 3px 0px #a7a40b;
-            transition: all .5s;
-            background: $secondaryBGcol url("../img/bgPaw.png") 20px 18px; 
+        box-shadow: 0px 5px 0px #247e4b;
+        align-self: center;
+            &:hover {
+                top: 2px;
+                border-color: #a7a40b9a;
+                box-shadow: 0px 3px 0px #a7a40b;
+                background: #ffdf00 url("../img/bgPaw.webp") 100% 8% no-repeat;
             }
     }
-.read-more {
-    font-size: 12px;
-    cursor: pointer;
-    align-self: flex-end;
-}
-.btn {
-    @include btn($primaryBGcol, #fff, 20px , 60px ,$primaryCol);
-    display: inline-block;
-    text-align: center;
-    
+    .read-more {
+        font-size: 12px;
+        cursor: pointer;
+        align-self: flex-end;
+    }
+    .btn {
+        @include btn($primaryBGcol, #fff, 20px , 60px ,$primaryCol);
+        display: inline-block;
+        text-align: center;
     }
 }
 .sibling-fade { 

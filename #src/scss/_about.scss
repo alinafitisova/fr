@@ -35,7 +35,7 @@
 	}
 	&__left {
         background: $cardBGcol;
-        padding: 10px 20px;
+        padding: 30px 30px;
         box-sizing: border-box;
 	}
 	&__description {
@@ -43,16 +43,16 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: space-around;  
+        justify-content: center;  
 	}
 	&__title {
         @include title (left); 
-        margin: 0px  0px;
+        margin: 0;
 	}
     &__text {
         width: 100%;
         min-height: 40%;
-        line-height: 40px;
+        line-height: 35px;
             @media screen and (max-width: 960px) {
                 font-size: 14px;
                 line-height: 31px;
@@ -64,37 +64,15 @@
         }
     }   
 	&__btn {
-        font-family: $mainFont;
-        font-weight: 700;
+        @include btn(transparent, $primaryBGcol,  10px,  10px, #000);
         font-size: 15px;
-        background: transparent;
         border: 4px $primaryBGcol solid;
         border-bottom: none;
-        text-decoration: none;
-        color: $primaryBGcol;
-        display: inline-block;
-        transition: all .5s;
-        position: relative;
-        top: 0;
         box-shadow: 0px 3px 0px #247e4b;
-        text-align: center;
-        padding: 10px 10px;
-        margin-bottom: 20px;
         &:hover {
-            color: #000;
-            top: 2px;
             border-color: #a7a40b9a;
             box-shadow: 0px 3px 0px #a7a40b;
-            transition: all .5s;
-            background: $secondaryBGcol url("../img/bgPaw.png") 20px 18px; 
+            background: #ffdf00 url("../img/bgPaw.png") 82% 2% no-repeat;
             }
     }
-
-.btn {
-    @include btn($primaryBGcol, #fff, 20px , 60px ,$primaryCol);
-    display: inline-block;
-    }
 }
-
-
-

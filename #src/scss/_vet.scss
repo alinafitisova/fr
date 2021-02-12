@@ -11,8 +11,9 @@
     height: 100%;
     width: 100%;
     margin-bottom: 50px;
-    &__title {
-        @include title(center);
+    &__heading {
+        @include heading(center);
+        margin-bottom: 50px;
     }
     &__bgImg {
         height: 55vh;
@@ -32,6 +33,7 @@
     margin-bottom: 70px;
     &__title {
         @include title(center);
+        margin: 50px 0 40px;
     }
     &__box {
         display: flex;

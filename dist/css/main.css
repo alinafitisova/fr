@@ -472,16 +472,20 @@ template {
   line-height: 50px;
   text-decoration: none;
   margin-top: 15px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: -webkit-box-shadow color 0.3s;
+  transition: -webkit-box-shadow color 0.3s;
+  -o-transition: box-shadow color 0.3s;
+  transition: box-shadow color 0.3s;
+  transition: box-shadow color 0.3s, -webkit-box-shadow color 0.3s;
 }
 
 .header__link:hover {
-  background: #FFDF00 url("../img/bgPaw.png") 20px 18px;
+  background: #FFDF00 url("../img/bgPaw.png") 87% 7% no-repeat;
   top: 2px;
   -webkit-box-shadow: 0px 4px 0px #a7a40b;
           box-shadow: 0px 4px 0px #a7a40b;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
   color: #000;
 }
 
@@ -689,7 +693,7 @@ template {
 
 .header-slider__inner {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -704,7 +708,7 @@ template {
       -ms-flex-align: start;
           align-items: flex-start;
   background-repeat: no-repeat;
-  background-position: top 70px right;
+  background-position: top 70px right -100px;
   background-size: contain;
   padding-top: 88px;
   position: relative;
@@ -838,9 +842,9 @@ template {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  -webkit-animation-name: dog 1.5s 0.4s both;
   -webkit-animation: dog 1.5s 0.4s both;
           animation: dog 1.5s 0.4s both;
-  -webkit-animation-name: dog 1.5s 0.4s both;
 }
 
 .donate-help {
@@ -1098,9 +1102,9 @@ template {
   color: #fff;
   display: inline-block;
   text-align: center;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
   position: relative;
   top: 0;
   -webkit-box-shadow: 0px 5px 0px #247e4b;
@@ -1112,10 +1116,7 @@ template {
   top: 2px;
   -webkit-box-shadow: 0px 4px 0px #a7a40b;
           box-shadow: 0px 4px 0px #a7a40b;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
-  background: #FFDF00 url("../img/bgPaw.png") 20px 18px;
+  background: #FFDF00 url("../img/bgPaw.png") 86% -1% no-repeat;
 }
 
 .slick-arrow {
@@ -1330,38 +1331,34 @@ template {
 }
 
 .adopt__btn {
+  color: #000;
+  display: inline-block;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 15px;
   background: transparent;
-  border: 4px #00A35C solid;
-  border-bottom: none;
   padding: 10px 10px;
   text-decoration: none;
-  color: #00A35C;
-  display: inline-block;
-  -ms-flex-item-align: center;
-      align-self: center;
+  border: 4px #00A35C solid;
+  border-bottom: none;
+  text-align: center;
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
   position: relative;
   top: 0;
-  -webkit-box-shadow: 0px 3px 0px #247e4b;
-          box-shadow: 0px 3px 0px #247e4b;
-  text-align: center;
+  -webkit-box-shadow: 0px 5px 0px #247e4b;
+          box-shadow: 0px 5px 0px #247e4b;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .adopt__btn:hover {
-  color: #000;
   top: 2px;
   border-color: #a7a40b9a;
   -webkit-box-shadow: 0px 3px 0px #a7a40b;
           box-shadow: 0px 3px 0px #a7a40b;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
-  background: #FFDF00 url("../img/bgPaw.png") 20px 18px;
+  background: #ffdf00 url("../img/bgPaw.webp") 100% 8% no-repeat;
 }
 
 .adopt .read-more {
@@ -1381,9 +1378,9 @@ template {
   color: #fff;
   display: inline-block;
   text-align: center;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
   position: relative;
   top: 0;
   -webkit-box-shadow: 0px 5px 0px #247e4b;
@@ -1397,10 +1394,7 @@ template {
   top: 2px;
   -webkit-box-shadow: 0px 4px 0px #a7a40b;
           box-shadow: 0px 4px 0px #a7a40b;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
-  background: #FFDF00 url("../img/bgPaw.png") 20px 18px;
+  background: #FFDF00 url("../img/bgPaw.png") 86% -1% no-repeat;
 }
 
 .sibling-fade {
@@ -1440,7 +1434,7 @@ template {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
-  margin-top: 95px;
+  margin: 150px 0 100px;
 }
 
 .num__cards {
@@ -1449,7 +1443,7 @@ template {
   display: flex;
   height: 70vh;
   margin-bottom: 100px;
-  background: url(../img/bgPlentyPaw.png) 20px 18px;
+  background: url("../img/bgPlentyPaw.png") 20px 18px;
 }
 
 .card {
@@ -1536,11 +1530,11 @@ template {
 }
 
 .back {
-  background: #FFDF00 url(../img/bgPlentyPaw.png) 20px 18px;
+  background: #FFDF00 url("../img/bgPlentyPaw.png") 20px 18px;
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
   color: #232323;
-  padding: 10px  15px  10px  15px;
+  padding: 40px  20px  20px  20px;
 }
 
 .back__subtitle {
@@ -1596,8 +1590,8 @@ template {
   font-weight: 700;
   font-size: 23px;
   padding: 0;
-  max-width: 60%;
-  line-height: 50px;
+  max-width: 80%;
+  line-height: 40px;
   margin: 0;
 }
 
@@ -1650,7 +1644,7 @@ template {
 
 .about__left {
   background: #fff;
-  padding: 10px 20px;
+  padding: 30px 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1667,8 +1661,9 @@ template {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about__title {
@@ -1678,78 +1673,52 @@ template {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
-  margin: 0px  0px;
+  margin: 0;
 }
 
 .about__text {
   width: 100%;
   min-height: 40%;
-  line-height: 40px;
+  line-height: 35px;
 }
 
 .about__btn {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 18px;
   background: transparent;
-  border: 4px #00A35C solid;
-  border-bottom: none;
+  padding: 10px 10px;
   text-decoration: none;
   color: #00A35C;
   display: inline-block;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
+  text-align: center;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
   position: relative;
   top: 0;
+  -webkit-box-shadow: 0px 5px 0px #247e4b;
+          box-shadow: 0px 5px 0px #247e4b;
+  font-size: 15px;
+  border: 4px #00A35C solid;
+  border-bottom: none;
   -webkit-box-shadow: 0px 3px 0px #247e4b;
           box-shadow: 0px 3px 0px #247e4b;
-  text-align: center;
-  padding: 10px 10px;
-  margin-bottom: 20px;
 }
 
 .about__btn:hover {
   color: #000;
   top: 2px;
+  -webkit-box-shadow: 0px 4px 0px #a7a40b;
+          box-shadow: 0px 4px 0px #a7a40b;
+  background: #FFDF00 url("../img/bgPaw.png") 86% -1% no-repeat;
+}
+
+.about__btn:hover {
   border-color: #a7a40b9a;
   -webkit-box-shadow: 0px 3px 0px #a7a40b;
           box-shadow: 0px 3px 0px #a7a40b;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
-  background: #FFDF00 url("../img/bgPaw.png") 20px 18px;
-}
-
-.about .btn {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  background: #00A35C;
-  padding: 20px 60px;
-  text-decoration: none;
-  color: #fff;
-  display: inline-block;
-  text-align: center;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
-  position: relative;
-  top: 0;
-  -webkit-box-shadow: 0px 5px 0px #247e4b;
-          box-shadow: 0px 5px 0px #247e4b;
-  display: inline-block;
-}
-
-.about .btn:hover {
-  color: #232323;
-  top: 2px;
-  -webkit-box-shadow: 0px 4px 0px #a7a40b;
-          box-shadow: 0px 4px 0px #a7a40b;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
-  background: #FFDF00 url("../img/bgPaw.png") 20px 18px;
+  background: #ffdf00 url("../img/bgPaw.png") 82% 2% no-repeat;
 }
 
 .footer__body {
@@ -1935,6 +1904,7 @@ template {
 
 .adopting-wrapper {
   margin-top: 150px;
+  margin-bottom: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1962,6 +1932,7 @@ template {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
+  margin-bottom: 50px;
 }
 
 .adopting__box {
@@ -2000,10 +1971,11 @@ template {
 .adopting__blockquote {
   position: relative;
   padding: 16px 24px;
-  margin: 16px 46px;
+  margin: 50px auto;
   font-size: 16px;
-  line-height: 25px;
+  line-height: 40px;
   text-align: center;
+  max-width: 55%;
 }
 
 .adopting__blockquote:before,
@@ -2050,7 +2022,9 @@ template {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
-  line-height: 35px;
+  line-height: 50px;
+  margin: 90px auto 60px;
+  max-width: 55%;
 }
 
 .adopting a {
@@ -2096,7 +2070,7 @@ template {
   width: 35px;
 }
 
-.aboutUs-wrapper {
+.about-wrapper {
   margin-top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2111,23 +2085,25 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 70px;
 }
 
-.aboutUs {
+.about-us {
   width: 100%;
   height: 100%;
 }
 
-.aboutUs__heading {
+.about-us__heading {
   font-size: 40px;
   line-height: 60px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
+  margin-bottom: 50px;
 }
 
-.aboutUs__description {
+.about-us__description {
   font-size: 18px;
   line-height: 37px;
   text-align: left;
@@ -2136,17 +2112,18 @@ template {
   color: #232323;
 }
 
-.aboutUs__blockquote {
+.about-us__blockquote {
   position: relative;
   padding: 16px 24px;
-  margin: 16px 46px;
+  margin: 50px auto;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 40px;
   text-align: center;
+  max-width: 55%;
 }
 
-.aboutUs__blockquote:before,
-.aboutUs__blockquote:after {
+.about-us__blockquote:before,
+.about-us__blockquote:after {
   position: absolute;
   color: #00A35C;
   font-size: 100px;
@@ -2154,26 +2131,26 @@ template {
   line-height: 100px;
 }
 
-.aboutUs__blockquote:before {
+.about-us__blockquote:before {
   content: '“';
   left: -30px;
   top: -10px;
 }
 
-.aboutUs__blockquote:after {
+.about-us__blockquote:after {
   content: '”';
   right: -30px;
   bottom: -10px;
 }
 
-.aboutUs__blockquote cite {
+.about-us__blockquote cite {
   color: #00A35C;
   font-size: 15px;
   padding-top: 10px;
   display: block;
 }
 
-.aboutUs__video,
+.about-us__video,
 .location-shelter__video {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2186,13 +2163,13 @@ template {
           justify-content: center;
 }
 
-.aboutUs__video iframe,
+.about-us__video iframe,
 .location-shelter__video iframe {
   width: 560px;
   height: 315px;
 }
 
-.historyAboutUs__title {
+.history-about__title {
   font-size: 35px;
   line-height: 45px;
   text-align: center;
@@ -2200,13 +2177,16 @@ template {
   font-weight: 400;
   color: #232323;
   line-height: 35px;
+  margin: 50px 0 40px;
 }
 
-.historyAboutUs__img {
+.history-about__img {
+  display: block;
+  margin: 0 auto 50px;
   max-width: 100%;
 }
 
-.historyAboutUs__description {
+.history-about__description {
   font-size: 18px;
   line-height: 37px;
   text-align: left;
@@ -2223,6 +2203,7 @@ template {
   font-weight: 400;
   color: #232323;
   line-height: 35px;
+  margin: 70px 0 40px;
 }
 
 .location-shelter__description {
@@ -2232,6 +2213,7 @@ template {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
+  margin-bottom: 30px;
 }
 
 .achievement {
@@ -2246,6 +2228,7 @@ template {
   font-weight: 400;
   color: #232323;
   line-height: 35px;
+  margin: 70px 0 40px;
 }
 
 .achievement__description {
@@ -2295,6 +2278,7 @@ template {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
+  margin-bottom: 50px;
 }
 
 .help__description {
@@ -2307,7 +2291,7 @@ template {
 }
 
 .help__photo-shelter {
-  height: 50vh;
+  height: 65vh;
   width: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -2321,10 +2305,11 @@ template {
 .help__blockquote {
   position: relative;
   padding: 16px 24px;
-  margin: 16px 46px;
+  margin: 50px auto;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 40px;
   text-align: center;
+  max-width: 55%;
 }
 
 .help__blockquote:before,
@@ -2348,13 +2333,6 @@ template {
   bottom: -10px;
 }
 
-.help__blockquote cite {
-  color: #00A35C;
-  font-size: 15px;
-  padding-top: 10px;
-  display: block;
-}
-
 .finance-help {
   width: 100%;
   height: 100%;
@@ -2368,6 +2346,7 @@ template {
   font-weight: 400;
   color: #232323;
   line-height: 35px;
+  margin: 50px 0 40px;
 }
 
 .finance-help__subtitle {
@@ -2389,6 +2368,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+  margin-bottom: -70px;
 }
 
 .finance-help__right {
@@ -2408,9 +2388,14 @@ template {
   font-size: 12px;
 }
 
+.finance-help__btn:hover {
+  background: #ffdf00 url("../img/bgPaw.png") 83% 1% no-repeat;
+}
+
 .payment-list {
   width: 60%;
-  margin: 30px 0;
+  margin: 0;
+  padding-left: 17px;
 }
 
 .payment-list__item {
@@ -2426,6 +2411,10 @@ template {
   font-weight: 700;
 }
 
+.box {
+  margin-top: 50px;
+}
+
 .box,
 .clinics {
   width: 100%;
@@ -2438,8 +2427,8 @@ template {
   line-height: 30px;
   border-collapse: collapse;
   border: 1px #ccc solid;
-  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -2476,12 +2465,8 @@ template {
   text-align: center;
   font-weight: 700;
   padding: 20px  0px;
-  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
-  background: #ffdd003f url("../img/bgPaw.png") 23px 23px;
-  -o-transition: all .5s;
-  transition: all .5s;
-  -webkit-transition: all .5s;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   margin-bottom: 10px;
 }
@@ -2506,6 +2491,14 @@ template {
   width: 30px;
 }
 
+.sum-odd {
+  background: #ffdd0025 url("../img/bgPaw.png") -724px -3px/100% auto no-repeat;
+}
+
+.sum-even {
+  background: #ffdd003f url("../img/bgPaw.png") -42px -3px/100% auto no-repeat;
+}
+
 details[open] summary::after {
   content: "-";
   outline: none;
@@ -2524,11 +2517,11 @@ details[close] {
 }
 
 tbody tr:nth-child(odd) {
-  background: #2ea26038;
+  background: #2ea2601e;
 }
 
 tbody tr:nth-child(even) {
-  background: #ffdd003f url(../img/bgPlentyPaw.png) 70px 1px;
+  background: #ffdd0025 url("../img/bgPlentyPaw.png") 257px 5px;
 }
 
 .kindOF-help {
@@ -2583,6 +2576,7 @@ tbody tr:nth-child(even) {
   font-weight: 400;
   color: #232323;
   line-height: 35px;
+  margin: 80px 0 40px;
 }
 
 .how-toHelp__subtitle {
@@ -2591,6 +2585,8 @@ tbody tr:nth-child(even) {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #232323;
+  margin: 50px 0;
+  line-height: 35px;
 }
 
 .curator {
@@ -2604,6 +2600,7 @@ tbody tr:nth-child(even) {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
+  margin: 80px 0 40px;
   line-height: 35px;
 }
 
@@ -2658,6 +2655,7 @@ tbody tr:nth-child(even) {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
+  margin: 80px 0 40px;
   line-height: 35px;
 }
 
@@ -2668,6 +2666,7 @@ tbody tr:nth-child(even) {
   font-weight: 700;
   color: #232323;
   color: rgba(226, 45, 45, 0.877);
+  font-weight: 500;
 }
 
 .cruel__description {
@@ -2761,13 +2760,14 @@ tbody tr:nth-child(even) {
   margin-bottom: 50px;
 }
 
-.vet__title {
-  font-size: 35px;
-  line-height: 45px;
+.vet__heading {
+  font-size: 40px;
+  line-height: 60px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
+  margin-bottom: 50px;
 }
 
 .vet__bgImg {
@@ -2794,6 +2794,7 @@ tbody tr:nth-child(even) {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
+  margin: 50px 0 40px;
 }
 
 .memor__box {
@@ -2892,7 +2893,7 @@ tbody tr:nth-child(even) {
 
 .contacts__pets {
   max-width: 100%;
-  margin-bottom: -5.2%;
+  margin-bottom: -5.8%;
 }
 
 .contacts a {
@@ -2922,7 +2923,7 @@ tbody tr:nth-child(even) {
 .contacts__bg {
   width: 100vw;
   background: #00A35C;
-  padding: 50px 30px 30px 30px;
+  padding: 95px 30px 30px 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 45px;
@@ -2997,44 +2998,86 @@ body {
 }
 
 .container {
-  max-width: 1800px;
+  max-width: 2800px;
   margin: auto;
-  padding: 0 35px;
+  padding: 0 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
+@media screen and (max-width: 2560px) {
+  .contacts__pets {
+    margin-bottom: -9.1%;
+  }
+}
+
+@media (max-width: 2560px) {
+  .container {
+    max-width: 1800px;
+    padding: 0 35px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .contacts__pets {
+    margin-bottom: -10.1%;
+  }
+}
+
 @media (max-width: 1920px) {
   .container {
-    max-width: 1500px;
-    padding: 0 35px;
+    max-width: 1600px;
+    padding: 0 45px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .header-slider__inner {
+    background-position: top 80px right;
   }
 }
 
 @media (max-width: 1600px) {
   .container {
-    max-width: 1180px;
-    padding: 0 25px;
+    max-width: 1300px;
+    padding: 0px 45px;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .contacts__pets {
+    margin-bottom: -10.2%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .contacts__pets {
+    margin-bottom: -10.3%;
   }
 }
 
 @media (max-width: 1440px) {
   .container {
+    max-width: 1180px;
     padding: 0 20px;
   }
 }
 
 @media screen and (max-width: 1280px) {
+  .header-slider__inner {
+    background-position: top 80px right -20px;
+  }
+
   .header-slider .slick-dots {
     padding-left: 60px;
+  }
+
+  .header-heading {
+    margin-top: -10%;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .header-slider__inner {
-    background-position: top 40px right;
-  }
-
   .adopt__item {
     width: 100%;
     height: 50vh;
@@ -3060,6 +3103,10 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+  .header-slider__inner {
+    background-position: top 80px right -67px;
+  }
+
   .pet-tag {
     bottom: 15%;
     right: 15%;
@@ -3106,6 +3153,10 @@ body {
     line-height: 40px;
   }
 
+  .num__title {
+    margin: 100px 0 50px;
+  }
+
   .back__subtitle {
     font-size: 18px;
   }
@@ -3145,20 +3196,20 @@ body {
     font-size: 14px;
   }
 
-  .aboutUs__heading {
+  .about-us__heading {
     font-size: 35px;
   }
 
-  .aboutUs__description {
+  .about-us__description {
     font-size: 17px;
   }
 
-  .historyAboutUs__title {
+  .history-about__title {
     font-size: 30px;
     line-height: 40px;
   }
 
-  .historyAboutUs__description {
+  .history-about__description {
     font-size: 17px;
   }
 
@@ -3241,9 +3292,8 @@ body {
     font-size: 17px;
   }
 
-  .vet__title {
-    font-size: 30px;
-    line-height: 40px;
+  .vet__heading {
+    font-size: 35px;
   }
 
   .memor__title {
@@ -3258,6 +3308,10 @@ body {
 
   .memor__subtitle {
     font-size: 18px;
+  }
+
+  .contacts__pets {
+    margin-bottom: -10.4%;
   }
 
   .contacts__heading {
@@ -3289,6 +3343,7 @@ body {
 @media (max-width: 1024px) {
   .container {
     padding: 0 30px;
+    max-width: 900px;
   }
 }
 
@@ -3397,21 +3452,21 @@ body {
     line-height: 20px;
   }
 
-  .aboutUs__heading {
+  .about-us__heading {
     font-size: 30px;
   }
 
-  .aboutUs__description {
+  .about-us__description {
     font-size: 15px;
     line-height: 25px;
   }
 
-  .historyAboutUs__title {
+  .history-about__title {
     font-size: 27px;
     line-height: 37px;
   }
 
-  .historyAboutUs__description {
+  .history-about__description {
     font-size: 15px;
     line-height: 25px;
   }
@@ -3507,9 +3562,8 @@ body {
     line-height: 25px;
   }
 
-  .vet__title {
-    font-size: 27px;
-    line-height: 37px;
+  .vet__heading {
+    font-size: 30px;
   }
 
   .memor__title {
@@ -3626,6 +3680,10 @@ body {
     line-height: 35px;
   }
 
+  .num__title {
+    margin: 80px 0 40px;
+  }
+
   .num__cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3667,6 +3725,10 @@ body {
 
   .card-middle {
     margin-top: 7px;
+  }
+
+  .front {
+    padding: 40px  10px  10px  40px;
   }
 
   .back {
@@ -3740,20 +3802,20 @@ body {
     font-size: 10px;
   }
 
-  .aboutUs__heading {
+  .about-us__heading {
     font-size: 27px;
   }
 
-  .aboutUs__description {
+  .about-us__description {
     font-size: 13px;
   }
 
-  .historyAboutUs__title {
+  .history-about__title {
     font-size: 25px;
     line-height: 35px;
   }
 
-  .historyAboutUs__description {
+  .history-about__description {
     font-size: 13px;
   }
 
@@ -3779,13 +3841,25 @@ body {
     font-size: 27px;
   }
 
+  .help__heading {
+    margin-bottom: 15px;
+  }
+
   .help__description {
     font-size: 13px;
+  }
+
+  .help__blockquote {
+    margin: 25px 30px 0;
   }
 
   .finance-help__title {
     font-size: 25px;
     line-height: 35px;
+  }
+
+  .finance-help__title {
+    margin: 40px 0;
   }
 
   .finance-help__subtitle {
@@ -3807,6 +3881,10 @@ body {
   .payment-list {
     margin: 20px  0px  0px;
     width: 100%;
+  }
+
+  .payment-list__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 
   .box__table,
@@ -3907,9 +3985,8 @@ body {
     font-size: 13px;
   }
 
-  .vet__title {
-    font-size: 25px;
-    line-height: 35px;
+  .vet__heading {
+    font-size: 27px;
   }
 
   .memor__title {
@@ -4102,7 +4179,7 @@ body {
     line-height: 25px;
   }
 
-  .aboutUs__video iframe,
+  .about-us__video iframe,
   .location-shelter__video iframe {
     width: 360px;
     height: 215px;
@@ -4193,7 +4270,7 @@ body {
 
 @media screen and (max-width: 460px) {
   .contacts__pets {
-    margin-bottom: -6.2%;
+    margin-bottom: -11.3%;
   }
 }
 
@@ -4204,7 +4281,7 @@ body {
 }
 
 @media screen and (max-width: 450px) {
-  .aboutUs__video iframe,
+  .about-us__video iframe,
   .location-shelter__video iframe {
     width: 345px;
     height: 220px;
@@ -4270,7 +4347,7 @@ body {
   }
 
   .pet-tag {
-    bottom: 18%;
+    bottom: 25%;
     right: 1%;
   }
 
@@ -4312,12 +4389,20 @@ body {
     margin-top: 20px;
   }
 
+  .num__title {
+    margin: 80px 0 20px;
+  }
+
   .card-around {
     width: 100%;
   }
 
   .wrap-middle {
     width: 100%;
+  }
+
+  .front {
+    padding: 25px  10px  10px  25px;
   }
 
   .back__description {
@@ -4350,12 +4435,12 @@ body {
     margin-top: 20px;
   }
 
-  .aboutUs__heading {
+  .about-us__heading {
     margin-top: 0;
     font-size: 26px;
   }
 
-  .historyAboutUs__title {
+  .history-about__title {
     margin-top: 20px;
   }
 
@@ -4365,6 +4450,10 @@ body {
 
   .achievement__title {
     margin-top: 20px;
+  }
+
+  .help-wrapper {
+    margin-top: 100px;
   }
 
   .help__heading {
@@ -4398,8 +4487,9 @@ body {
     margin-top: 20px;
   }
 
-  .vet__title {
-    margin-top: 20px;
+  .vet__heading {
+    margin-top: 0;
+    font-size: 26px;
   }
 
   .vet__bgImg {
@@ -4415,6 +4505,10 @@ body {
     font-size: 26px;
   }
 
+  .contacts__bg {
+    padding: 20px;
+  }
+
   .contacts__title {
     margin-top: 20px;
   }
@@ -4427,33 +4521,13 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-  .header-heading__title {
-    font-size: 20px;
-    line-height: 27px;
+  .donate-dog {
+    left: 3px;
+    bottom: 5px;
   }
 
   .donatModal__btn {
     font-size: 13px;
-  }
-
-  .lost-slider__title {
-    font-size: 20px;
-    line-height: 27px;
-  }
-
-  .adopt__title {
-    font-size: 20px;
-    line-height: 27px;
-  }
-
-  .num__title {
-    font-size: 20px;
-    line-height: 27px;
-  }
-
-  .about__title {
-    font-size: 20px;
-    line-height: 27px;
   }
 
   .footer-menu__item {
@@ -4481,41 +4555,21 @@ body {
     line-height: 15px;
   }
 
-  .adopting__title {
-    font-size: 20px;
-    line-height: 27px;
-  }
-
-  .aboutUs__blockquote {
+  .about-us__blockquote {
     font-size: 15px;
     line-height: 25px;
     padding: 10px 0px;
     margin: 10px 30px;
   }
 
-  .aboutUs__blockquote:before,
-  .aboutUs__blockquote:after {
+  .about-us__blockquote:before,
+  .about-us__blockquote:after {
     font-size: 50px;
   }
 
-  .aboutUs__blockquote cite {
+  .about-us__blockquote cite {
     font-size: 13px;
     line-height: 15px;
-  }
-
-  .historyAboutUs__title {
-    font-size: 20px;
-    line-height: 27px;
-  }
-
-  .location-shelter__title {
-    font-size: 20px;
-    line-height: 27px;
-  }
-
-  .achievement__title {
-    font-size: 20px;
-    line-height: 27px;
   }
 
   .help__photo-shelter {
@@ -4534,54 +4588,14 @@ body {
   .help__blockquote:after {
     font-size: 50px;
   }
-
-  .help__blockquote cite {
-    font-size: 13px;
-    line-height: 15px;
-  }
-
-  .finance-help__title {
-    font-size: 20px;
-    line-height: 27px;
-  }
-
-  .how-toHelp__title {
-    font-size: 20px;
-    line-height: 27px;
-  }
-
-  .curator__title {
-    font-size: 20px;
-    line-height: 27px;
-  }
-
-  .cruel__title {
-    font-size: 20px;
-    line-height: 27px;
-  }
-
-  .vet__title {
-    font-size: 20px;
-    line-height: 27px;
-  }
-
-  .memor__title {
-    font-size: 20px;
-    line-height: 27px;
-  }
-
-  .contacts__bg {
-    padding: 15px;
-  }
-
-  .contacts__title {
-    font-size: 20px;
-    line-height: 27px;
-  }
 }
 
 @media screen and (max-width: 360px) {
-  .aboutUs__video iframe,
+  .pet-tag {
+    bottom: 20%;
+  }
+
+  .about-us__video iframe,
   .location-shelter__video iframe {
     width: 300px;
     height: 185px;
@@ -4592,36 +4606,42 @@ body {
   .header-slider__inner {
     padding: 0;
   }
+
+  .pet-tag {
+    bottom: 10%;
+  }
 }
 
 @media screen and (max-width: 290px) {
-  .aboutUs__video iframe,
+  .about-us__video iframe,
   .location-shelter__video iframe {
     width: 250px;
     height: 140px;
   }
 }
 
-.webp .header__link:hover{ background: #FFDF00 url(../img/bgPaw.webp) 20px 18px; }
+.webp .header__link:hover{ background: #FFDF00 url(../img/bgPaw.webp) 87% 7% no-repeat; }
 
 .webp #donatModal{ background: #fafafa url(../img/bgPlentyPaw.webp) 20px 18px; }
 
-.webp .btn:hover{ background: #FFDF00 url(../img/bgPaw.webp) 20px 18px; }
+.webp .btn:hover{ background: #FFDF00 url(../img/bgPaw.webp) 86% -1% no-repeat; }
 
 .webp .slick-arrow:hover{ background: #FFDF00 url(../img/bgPaw.webp) 20px 18px; }
 
-.webp .adopt__btn:hover{ background: #FFDF00 url(../img/bgPaw.webp) 20px 18px; }
-
-.webp .adopt .btn:hover{ background: #FFDF00 url(../img/bgPaw.webp) 20px 18px; }
+.webp .adopt .btn:hover{ background: #FFDF00 url(../img/bgPaw.webp) 86% -1% no-repeat; }
 
 .webp .num__cards{ background: url(../img/bgPlentyPaw.webp) 20px 18px; }
 
 .webp .back{ background: #FFDF00 url(../img/bgPlentyPaw.webp) 20px 18px; }
 
-.webp .about__btn:hover{ background: #FFDF00 url(../img/bgPaw.webp) 20px 18px; }
+.webp .about__btn:hover{ background: #FFDF00 url(../img/bgPaw.webp) 86% -1% no-repeat; }
 
-.webp .about .btn:hover{ background: #FFDF00 url(../img/bgPaw.webp) 20px 18px; }
+.webp .about__btn:hover{ background: #ffdf00 url(../img/bgPaw.webp) 82% 2% no-repeat; }
 
-.webp .box__area, .webp .clinics__area{ background: #ffdd003f url(../img/bgPaw.webp) 23px 23px; }
+.webp .finance-help__btn:hover{ background: #ffdf00 url(../img/bgPaw.webp) 83% 1% no-repeat; }
 
-.webp tbody tr:nth-child(even){ background: #ffdd003f url(../img/bgPlentyPaw.webp) 70px 1px; }
+.webp .sum-odd{ background: #ffdd0025 url(../img/bgPaw.webp) -724px -3px/100% auto no-repeat; }
+
+.webp .sum-even{ background: #ffdd003f url(../img/bgPaw.webp) -42px -3px/100% auto no-repeat; }
+
+.webp tbody tr:nth-child(even){ background: #ffdd0025 url(../img/bgPlentyPaw.webp) 257px 5px; }

@@ -18,12 +18,16 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    animation: dog 1.5s 0.4s both;
     -webkit-animation-name: dog 1.5s 0.4s both;
+    animation: dog 1.5s 0.4s both;
         @media screen and (max-width: 500px) {
             width: 88px;
             height: 98px;
             left: 5px;
+        }
+        @media screen and (max-width: 375px) {
+            left: 3px;
+            bottom: 5px;
         }
 }
 .donate-help {
