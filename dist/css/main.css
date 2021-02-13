@@ -2395,7 +2395,8 @@ template {
 .payment-list {
   width: 60%;
   margin: 0;
-  padding-left: 17px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .payment-list__item {
@@ -4518,6 +4519,8 @@ body {
 
   .help__photo-shelter {
     height: 40vh;
+    background-attachment: scroll;
+    background-size: cover;
   }
 
   .help__blockquote {
@@ -4597,6 +4600,9 @@ body {
 
   .vet__bgImg {
     height: 40vh;
+    background-attachment: scroll;
+    background-position: -70px -70px;
+    background-size: 580px auto;
     margin-bottom: 10px;
   }
 
@@ -4679,7 +4685,6 @@ body {
   }
 
   .help__photo-shelter {
-    background-size: cover;
     background-position: right bottom;
   }
 

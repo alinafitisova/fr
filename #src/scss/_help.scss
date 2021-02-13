@@ -27,13 +27,18 @@
         background-position: center;
         background-size: cover;
         transition: all .5s;
-        @media screen and (max-width: 425px) {
-            height: 40vh;
-        }
-        @media screen and (max-width: 375px) {
-            background-size: cover; 
-            background-position: right bottom;
-        }
+            // @media (max-width: @iphone-screen) {
+            //     background-attachment: scroll;
+            // }
+            @media screen and (max-width: 425px) {
+                height: 40vh;
+                background-attachment: scroll;
+                background-size: cover;
+            }
+            @media screen and (max-width: 375px) {
+                // background-size: cover; 
+                background-position: right bottom;
+            }
     }
     &__blockquote {
         position: relative;
@@ -95,24 +100,23 @@
         justify-content: space-between;
         height: 100%;
         margin-bottom: -70px;
-        @media screen and (max-width: 1024px) {
-            margin-bottom: 0px;
-        }
-
-        @media screen and (max-width: 768px) {
-            flex-direction: column;
-            width: 100%;
-            margin-bottom: -20px;
-        }
-        @media screen and (max-width: 425px) {
-            margin-bottom: 0;
-        }
+            @media screen and (max-width: 1024px) {
+                margin-bottom: 0px;
+            }
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                width: 100%;
+                margin-bottom: -20px;
+            }
+            @media screen and (max-width: 425px) {
+                margin-bottom: 0;
+            }
     }
     &__right {
         width: 40%;
-        @media screen and (max-width: 768px) {
-            width: 50%;
-        }
+            @media screen and (max-width: 768px) {
+                width: 50%;
+            }
         & img {
             max-width: 100%;
         }
@@ -130,14 +134,14 @@
 .payment-list {
     width: 60%;
     margin: 0;
-    padding-left: 17px;
-    @media screen and (max-width: 768px) {
-        margin: 20px  0px  0px;
-        width: 100%;
-    }
-    @media screen and (max-width: 450px) {
-        padding-left: 15px;
-    }
+    box-sizing: border-box;
+        @media screen and (max-width: 768px) {
+            margin: 20px  0px  0px;
+            width: 100%;
+        }
+        @media screen and (max-width: 450px) {
+            padding-left: 15px;
+        }
     &__item {
         line-height: 25px;
     }
@@ -344,9 +348,9 @@ tbody tr:nth-child(even) {
     &__right {
         @include description(left); 
         width: 50%;
-        @media screen and (max-width: 768px) {
-            width: 100%;
-        }
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
     }
 }
 .cruel {
@@ -369,29 +373,29 @@ tbody tr:nth-child(even) {
         align-items: center;
         justify-content: space-between;
         height: 100%;
-        @media screen and (max-width: 768px) {
-            flex-direction: column;
-        }
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
         & img {
             width: 100%;
-            @media screen and (max-width: 425px) {
-                margin-top: 15px;
-            }
+                @media screen and (max-width: 425px) {
+                    margin-top: 15px;
+                }
         }
     }
     &__description-left{
         width: 60%;
         margin-right: 20px;
-        @media screen and (max-width: 768px) {
-            width: 100%;
-            margin-right: 0;
-        }
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                margin-right: 0;
+            }
     }
     &__right {
         width: 40%;
-        @media screen and (max-width: 768px) {
-            width: 50%;
-        }
+            @media screen and (max-width: 768px) {
+                width: 50%;
+            }
     }
 }
 .introduct {
@@ -399,26 +403,26 @@ tbody tr:nth-child(even) {
     align-items: center;
     justify-content: space-between;
     margin: 50px auto 30px;
-    @media screen and (max-width: 768px) {
-        flex-direction: column;
-        margin: 30px auto 30px;
-    }
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            margin: 30px auto 30px;
+        }
     &__movie {
         margin-right: 30px;
-        @media screen and (max-width: 768px) {
-            margin-right: 0px;
-        }
+            @media screen and (max-width: 768px) {
+                margin-right: 0px;
+            }
         & iframe {
             width: 560px;
             height: 315px;
-            @media screen and (max-width: 600px) {
-                width: 360px;
-                height: 215px;
-            }
-            @media screen and (max-width: 450px) {
-                width: 270px;
-                height: 180px;
-            }
+                @media screen and (max-width: 600px) {
+                    width: 360px;
+                    height: 215px;
+                }
+                @media screen and (max-width: 450px) {
+                    width: 270px;
+                    height: 180px;
+                }
         }
     }
     &__description {
