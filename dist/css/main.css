@@ -2994,7 +2994,6 @@ html,
 body {
   font-family: "Roboto", sans-serif;
   color: #232323;
-  scroll-behavior: smooth;
 }
 
 .container {
@@ -3246,6 +3245,10 @@ body {
 
   .finance-help__subtitle {
     font-size: 18px;
+  }
+
+  .finance-help__payment {
+    margin-bottom: 0px;
   }
 
   .kindOF-help__item {
