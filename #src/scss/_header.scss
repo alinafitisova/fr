@@ -163,7 +163,7 @@
     &__menu {
         display: block;
         position: fixed;
-        top: -100%;
+        top: -101%;
         right: 0;
         width: 25%;
         height: 70%;
@@ -182,14 +182,17 @@
             height: 80%;
             padding: 55px 50px 0 50px;
         }
-        @media screen and (max-width: 500px) {
-            width: 70%;
-            height: 80%;
+        @media screen and (max-width: 460px) {
+            width: 50%;
+            height: 92%;
         }
-                &.active {
-                top: 0px;
-                right: 0;
-                }
+        @media screen and (max-width: 375px) {
+            width: 70%;
+        }
+        &.active {
+            top: 0px;
+            right: 0;
+        }
     }
 }
 @keyframes marker{
