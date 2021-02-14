@@ -359,6 +359,9 @@ tbody tr:nth-child(even) {
         @include title (center);
         margin: 80px 0 40px;
         line-height: 35px;
+            @media screen and (max-width: 425px) {
+                margin: 50px 0 30px;
+            }
     }
     &__subtitle {
         @include subtitle (center);

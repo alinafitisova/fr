@@ -37,6 +37,9 @@
         background: $cardBGcol;
         padding: 30px 30px;
         box-sizing: border-box;
+            @media screen and (max-width: 425px) {
+            padding: 20px 20px;
+            }
 	}
 	&__description {
         height: 100%;
@@ -47,7 +50,7 @@
 	}
 	&__title {
         @include title (left); 
-        margin: 0;
+        margin: 0; 
 	}
     &__text {
         width: 100%;
@@ -58,7 +61,7 @@
                 line-height: 31px;
         }
             @media screen and (max-width: 768px){
-                max-height: 40%;
+                max-height: 50%;
                 overflow: scroll;
                 line-height: 23px;
         }
